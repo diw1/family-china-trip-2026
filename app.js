@@ -8,7 +8,7 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
 
 if (!reduceMotion && "IntersectionObserver" in window) {
   const revealTargets = document.querySelectorAll(
-    ".fact-card, .route-stop, .day-card, .info-card, .destination-card, .check-card"
+    ".fact-card, .route-stop, .day-card, .info-card, .destination-card, .check-card, .stay-banner, .map-day, .resort-card, .activity-lane, .decision-grid article, .weather-band"
   );
 
   document.documentElement.classList.add("reveal-ready");
