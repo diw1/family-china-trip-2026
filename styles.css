@@ -1244,6 +1244,379 @@ blockquote {
   align-items: center;
 }
 
+.shanghai-stay {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(310px, 0.65fr);
+  gap: 34px;
+  align-items: center;
+  color: var(--ink);
+  background: #f5ead6;
+  border-radius: var(--radius-lg);
+}
+
+.shanghai-stay h3 {
+  margin-bottom: 8px;
+  font-size: 25px;
+}
+
+.section-deep .shanghai-stay p:not(.eyebrow),
+.section-deep .holiday-alert p,
+.section-deep .shanghai-day-card p,
+.section-deep .split-track li,
+.section-deep .venue-card p,
+.section-deep .crab-card p,
+.section-deep .season-warning p,
+.section-deep .museum-note p {
+  color: inherit;
+}
+
+.shanghai-stay-copy p:last-child {
+  margin-bottom: 0;
+  color: var(--ink-soft) !important;
+}
+
+.shanghai-stay-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  border: 1px solid rgba(23, 42, 70, 0.12);
+  border-radius: var(--radius-md);
+}
+
+.shanghai-stay-facts div {
+  min-height: 92px;
+  padding: 15px 10px;
+  display: grid;
+  align-content: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.shanghai-stay-facts div:not(:last-child) {
+  border-right: 1px solid rgba(23, 42, 70, 0.12);
+}
+
+.shanghai-stay-facts strong,
+.shanghai-stay-facts span {
+  display: block;
+}
+
+.shanghai-stay-facts strong {
+  color: var(--terracotta-dark);
+  font-family: Georgia, serif;
+  font-size: 19px;
+}
+
+.shanghai-stay-facts span {
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+
+.holiday-alert {
+  margin-block: 16px 30px;
+  padding: 16px 20px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+  color: #fff3cf;
+  background: rgba(215, 169, 67, 0.12);
+  border: 1px solid rgba(215, 169, 67, 0.34);
+  border-radius: 14px;
+}
+
+.holiday-alert > span {
+  padding: 5px 9px;
+  color: var(--ink);
+  background: var(--gold);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.holiday-alert p {
+  margin: 0;
+}
+
+.shanghai-days {
+  display: grid;
+  gap: 12px;
+}
+
+.shanghai-day-card {
+  padding: 22px 24px;
+  display: grid;
+  grid-template-columns: 94px 1fr auto;
+  gap: 24px;
+  align-items: center;
+  color: var(--ink);
+  background: #fff;
+  border-left: 5px solid #6d8fa7;
+  border-radius: var(--radius-md);
+}
+
+.shanghai-day-card.crab-day {
+  border-left-color: var(--terracotta);
+}
+
+.shanghai-day-card.split-highlight {
+  background: #e6f0ee;
+  border-left-color: var(--jade);
+}
+
+.shanghai-day-date {
+  display: grid;
+  justify-items: start;
+}
+
+.shanghai-day-date strong {
+  color: var(--terracotta-dark);
+  font-family: Georgia, serif;
+  font-size: 25px;
+}
+
+.shanghai-day-date span {
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+.shanghai-day-card .card-kicker {
+  margin-bottom: 2px;
+}
+
+.shanghai-day-card h3 {
+  margin-bottom: 4px;
+  font-size: 20px;
+}
+
+.shanghai-day-card p:last-child {
+  margin-bottom: 0;
+  color: var(--ink-soft) !important;
+  font-size: 14px;
+}
+
+.effort-pill {
+  padding: 5px 10px;
+  color: var(--jade);
+  background: #e5efec;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.split-plan,
+.crab-section {
+  margin-top: 56px;
+}
+
+.inverse-subheading .card-kicker {
+  color: var(--gold);
+}
+
+.inverse-subheading h3 {
+  margin-bottom: 20px;
+  color: var(--white);
+  font-size: 28px;
+}
+
+.split-tracks {
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 14px;
+}
+
+.split-track {
+  padding: 27px;
+  color: var(--ink);
+  background: #f4f1e9;
+  border-radius: var(--radius-md);
+}
+
+.family-track {
+  background: #dcece8;
+}
+
+.split-track > span {
+  color: var(--terracotta);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+}
+
+.split-track h4 {
+  margin-block: 6px 12px;
+  font-size: 20px;
+}
+
+.split-track ol {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.split-track li + li {
+  margin-top: 7px;
+}
+
+.venue-picks {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 1.08fr 1fr 0.92fr;
+  gap: 14px;
+}
+
+.venue-card {
+  padding: 24px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius-md);
+}
+
+.venue-card.primary-venue {
+  background: #f4ddb5;
+}
+
+.venue-card.watch-venue {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: var(--white);
+}
+
+.venue-label {
+  color: var(--terracotta);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.watch-venue .venue-label {
+  color: var(--gold);
+}
+
+.venue-card h3 {
+  margin-block: 8px 8px;
+  font-size: 20px;
+}
+
+.venue-card p {
+  margin-bottom: 14px;
+  color: var(--ink-soft) !important;
+  font-size: 14px;
+}
+
+.venue-card.watch-venue p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.venue-card a {
+  color: var(--terracotta-dark);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.venue-card.watch-venue a {
+  color: var(--gold);
+}
+
+.crab-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.crab-card {
+  padding: 28px;
+  color: var(--ink);
+  background: #fff;
+  border-top: 5px solid #9e6a42;
+  border-radius: var(--radius-md);
+}
+
+.crab-card.feature-crab {
+  background: #f5ead6;
+  border-top-color: var(--terracotta);
+}
+
+.meal-slot {
+  color: var(--terracotta);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+}
+
+.crab-card h3 {
+  margin-block: 7px 4px;
+  font-size: 23px;
+}
+
+.crab-card .restaurant-meta {
+  color: #7a624e !important;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.crab-card p {
+  color: var(--ink-soft) !important;
+  font-size: 14px;
+}
+
+.crab-card .booking-note {
+  margin-bottom: 0;
+  padding-top: 12px;
+  border-top: 1px solid rgba(23, 42, 70, 0.12);
+  font-size: 12px;
+}
+
+.season-warning {
+  margin-top: 14px;
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  align-items: center;
+  color: #fff3cf;
+  background: rgba(139, 52, 37, 0.45);
+  border: 1px solid rgba(215, 169, 67, 0.25);
+  border-radius: var(--radius-md);
+}
+
+.season-warning strong {
+  color: var(--gold);
+  font-size: 18px;
+}
+
+.season-warning p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-size: 14px;
+}
+
+.shanghai-bottom-row {
+  margin-top: 42px;
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 14px;
+}
+
+.museum-note {
+  padding: 26px;
+  color: var(--ink);
+  background: #dce7ee;
+  border-radius: var(--radius-md);
+}
+
+.museum-note h3 {
+  margin-bottom: 6px;
+}
+
+.museum-note p:last-child {
+  margin-bottom: 0;
+  color: var(--ink-soft) !important;
+}
+
 .lead {
   font-size: 21px;
   font-weight: 650;
@@ -1421,7 +1794,13 @@ footer {
 
   .resort-grid,
   .activity-split,
-  .decision-grid {
+  .decision-grid,
+  .venue-picks {
+    grid-template-columns: 1fr;
+  }
+
+  .shanghai-stay,
+  .split-tracks {
     grid-template-columns: 1fr;
   }
 
@@ -1536,8 +1915,35 @@ footer {
   .stay-intro,
   .arrival-note,
   .mini-club-callout,
-  .detail-columns,
-  .weather-band {
+    .detail-columns,
+    .weather-band,
+    .shanghai-bottom-row,
+    .crab-grid,
+    .season-warning {
+    grid-template-columns: 1fr;
+  }
+
+  .shanghai-day-card {
+    grid-template-columns: 70px 1fr;
+    gap: 14px;
+    align-items: start;
+  }
+
+  .shanghai-day-card .effort-pill {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .shanghai-stay-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .shanghai-stay-facts div:not(:last-child) {
+    border-right: 0;
+    border-bottom: 1px solid rgba(23, 42, 70, 0.12);
+  }
+
+  .holiday-alert {
     grid-template-columns: 1fr;
   }
 
@@ -1723,6 +2129,13 @@ footer {
   .decision-grid article,
   .stay-banner,
   .weather-band,
+  .shanghai-stay,
+  .shanghai-day-card,
+  .split-track,
+  .venue-card,
+  .crab-card,
+  .season-warning,
+  .museum-note,
   .check-card,
   .departure-card {
     break-inside: avoid;
