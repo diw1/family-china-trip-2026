@@ -8,6 +8,8 @@ data = json.loads((ROOT / 'trip-data.json').read_text(encoding='utf-8'))
 
 def build_html():
     flights = ''.join('<tr>' + ''.join(f'<td>{e(cell)}</td>' for cell in row) + '</tr>' for row in data['flights'])
+    airport = data['airport_timing']
+    airport_rows = ''.join('<tr>' + ''.join(f'<td>{e(cell)}</td>' for cell in [row['date']+' '+row['flight'],row['arrival']+' '+row['terminal'],row['leave']]) + '</tr>' for row in airport['rows'])
     stays = []
     for stay in data['stays']:
         phone = f'<a href="tel:{e(stay["dial"])}">{e(stay["phone"])}</a>' if stay['dial'] else ''
@@ -23,7 +25,7 @@ def build_html():
     for i, task in enumerate(data['todos'], 1):
         tasks.append(f'<details class="task-row" id="todo-{i}"{" open" if i <= 3 else ""}><summary><span class="task-priority">{e(task["priority"])}</span><span>{e(task["title"])}</span><span class="task-state">{e(task["state"])}</span></summary><div class="task-body"><p class="task-meta">负责：{e(task["owner"])} · 时间：{e(task["when"])}</p><p>{e(task["text"])}</p></div></details>')
     html = (ROOT / 'index.template.html').read_text(encoding='utf-8')
-    for name, value in {'UPDATED':data['updated'], 'FLIGHTS':flights, 'STAYS':''.join(stays), 'CITIES':'\n'.join(cities), 'TODOS':'\n'.join(tasks)}.items():
+    for name, value in {'UPDATED':data['updated'], 'FLIGHTS':flights, 'AIRPORT_POLICY':e(airport['policy']), 'AIRPORT_ROWS':airport_rows, 'AIRPORT_NOTE':e(airport['note']), 'STAYS':''.join(stays), 'CITIES':'\n'.join(cities), 'TODOS':'\n'.join(tasks)}.items():
         html = html.replace('{{' + name + '}}', value)
     assert '{{' not in html
     (ROOT / 'index.html').write_text(html, encoding='utf-8')
@@ -32,6 +34,11 @@ def build_markdown():
     header = '> 更新：' + data['updated'] + '。由 trip-data.json 同步生成，与网页首页及离线简版使用同一份逐日数据。\n> 这是计划，不是预约凭证；公开资料不含姓名、订单号、证件号和朋友住址。\n\n'
     overview = ['# 2026 年 9 月家庭旅行｜行程总览\n\n', header, '## 同行与原则\n\n西安一家三口；孩子7岁，能听说中文、少阅读、历史零基础。奶奶62岁，自行抵达西安且不参加西安游玩，9月16日起四人同行。不处理奶奶自行抵达安排。每天一个重点，保留午休；自然耐看便服人像是高优先级，不做古装妆造。\n\n', '## 航班（当地时间）\n\n| 日期 | 航班 | 出发 | 到达 |\n|---|---|---|---|\n']
     overview.extend('| ' + ' | '.join(row) + ' |\n' for row in data['flights'])
+    airport = data['airport_timing']
+    overview.extend(['\n## 机场提前量与出发时间\n\n',airport['policy']+'\n\n','| 日期与航班 | 目标到机场 | 出发安排 |\n|---|---|---|\n'])
+    for row in airport['rows']:
+        overview.append('| '+row['date']+' '+row['flight']+' | '+row['arrival']+' '+row['terminal']+' | '+row['leave']+' |\n')
+    overview.append('\n'+airport['note']+'\n')
     overview.append('\n## 住宿与真实状态\n\n')
     for stay in data['stays']:
         overview.append('- ' + stay['dates'] + '：' + stay['hotel'] + '；' + stay['address'] + '。' + stay['state'] + '。\n')
@@ -77,8 +84,12 @@ def build_pdf():
     def p(text, style='BodyText'):
         return Paragraph(e(text), styles[style])
     story.extend([p('2026 家庭中国旅行', 'Title'),p('9月12–28日 · 每天一个重点', 'Heading1'),p('更新：' + data['updated'] + ' · 离线执行简版'),p('西安一家三口；9月16日起奶奶加入，四人继续。孩子7岁，能听说中文、少阅读；奶奶62岁，不参加西安游玩。'),p('拍照是高优先级：自然、耐看、现代便服，不安排古装。所有时间为计划，活动和接送未因写入攻略而完成预订。'),Spacer(1,10),p('航班 · 全部为当地时间','Heading2')])
+    airport = data['airport_timing']
+    story.append(p(airport['policy'],'SmallTrip'))
+    arrivals = {row['flight']:row for row in airport['rows']}
     for row in data['flights']:
-        story.append(p(' · '.join(row)))
+        story.append(p(' · '.join(row),'SmallTrip'))
+        story.append(p('目标'+arrivals[row[1]]['arrival']+'到'+arrivals[row[1]]['terminal']+'；'+arrivals[row[1]]['leave'],'SmallTrip'))
     story.append(Spacer(1,10))
     story.append(p('酒店与状态','Heading2'))
     for stay in data['stays']:
