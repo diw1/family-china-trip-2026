@@ -106,8 +106,8 @@ def build_pdf():
             story.append(KeepTogether(block))
     story.extend([PageBreak(),p('待办与分工','Heading1'),p('以下角色是建议分工，状态截至'+data['updated']+'；未替家人联系或预订。')])
     for task in data['todos']:
-        story.append(KeepTogether([p(task['priority']+'｜'+task['title'],'Heading2'),p(task['state']+' · 负责：'+task['owner'],'SmallTrip'),p('时间：'+task['when'],'SmallTrip'),p(task['text']),Spacer(1,9)]))
-    story.extend([Spacer(1,8),p('随身小包','Heading2'),p('与订票一致的证件原件、水、零食、无文字小游戏、防晒帽、雨衣、防滑鞋。儿童联系卡写家长电话和酒店中文地址，随身携带，不上传公开网页。')])
+        story.append(KeepTogether([p(task['priority']+'｜'+task['title'],'Heading2'),p(task['state']+' · 负责：'+task['owner'],'SmallTrip'),p('时间：'+task['when'],'SmallTrip'),p(task['text']),Spacer(1,3)]))
+    story.append(KeepTogether([Spacer(1,8),p('随身小包','Heading2'),p('与订票一致的证件原件、水、零食、无文字小游戏、防晒帽、雨衣、防滑鞋。儿童联系卡写家长电话和酒店中文地址，随身携带，不上传公开网页。')]))
     def footer(canvas, doc):
         canvas.setFont('TripChinese',8)
         canvas.setFillColor(colors.HexColor('#506078'))
