@@ -13,6 +13,8 @@ const data = {
     ],
     hotels: [
       ['首选 · 氛围与位置', 'L’Escape 莱斯盖普', 'Luxury Collection · 明洞／会贤', '巴黎复古风格，适合两人吃饭、逛街、回酒店休息。32㎡ Amour 大床房五晚约 A$2,921，不含早，预算内；53㎡ Atelier 小套房含早约 A$3,617，属于超预算升级。', '已在本次日期的订房页核对房型、双人入住、含税价及取消政策。套房列有浴缸与酒廊使用权，具体餐饮权益待酒店确认；不把 SPA 当作天然温泉。', 'https://www.marriott.com/en-us/hotels/sellm-lescape-a-luxury-collection-hotel-seoul-myeongdong/overview/'],
+      ['预算内 · 含早与设计', 'Mondrian 首尔梨泰院', 'Mondrian Seoul Itaewon · 梨泰院', '设计感强，适合汉南洞、梨泰院餐饮与酒店休息。23㎡ Signature King 五晚可取消无早约 A$2,593；双人含早约 A$2,891，平均 A$578／晚，符合原预算。', '客房较小；官网列地铁站步行约 15 分钟，冬季更依赖打车。室内泳池可用，官网 2026 户外泳池营业季为 5/23–9/27，不把户外池列入十二月体验。', 'https://all.accor.com/hotel/B771/index.en.shtml'],
+      ['超预算 · 汉江景观', 'Hotel Naru 美憬阁', 'Hotel Naru Seoul – MGallery Collection · 麻浦', '推荐按 38㎡ Deluxe River King 核价，带浴缸、看汉江；有全年室内泳池。可取消无早五晚约 A$3,577，平均 A$715／晚；含双人早餐约 A$4,161。', '低价无景房不能代表河景体验：37㎡低楼层无景无障碍房可取消约 A$3,168。河景可取消价列 12/21 18:00 前免费取消、12/19 前零付款；实际扣款与担保下单核对。', 'https://mgallery.accor.com/en/hotels/B5E0.html'],
       ['备选 · 市中心与泳池', '首尔威斯汀朝鲜酒店', 'The Westin Josun Seoul · 市厅／明洞', '经典酒店，适合重视市中心位置、室内泳池和完整酒店设施。36㎡ Deluxe 大床房五晚约 A$3,508，不含早；双人含早方案约 A$4,000。', '约 A$702／晚已超过原预算。基础房桑拿另收费；泳池每日有维护时段，节假日可能限制每日进入次数。', 'https://www.marriott.com/en-us/hotels/selwi-the-westin-josun-seoul/overview/'],
       ['备选 · 实用与泳池', '东大门诺富特酒店', 'Novotel Ambassador Seoul Dongdaemun', '23㎡标准大床房，可取消、不含早五晚约 A$2,975；含早可取消约 A$3,384。靠近东大门，适合偏重逛城、用酒店室内泳池的安排。', '房间较小；低价 A$2,826 是不可退款方案，不能与可取消价格混比。房型描述中的泳池指酒店设施，不是客房私泳池；冬季不依赖屋顶设施。', 'https://all.accor.com/hotel/A5U6/index.en.shtml']
     ]

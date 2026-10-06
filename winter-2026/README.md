@@ -12,3 +12,5 @@
 - 孩子已有中国签证；中国护照成人为澳洲 PR。孩子的大连照顾安排、现有签证停留期、PR 返澳资格仍须确认。
 - 待办仅保存在当前浏览器 localStorage，不上传、不跨设备同步。没有已订机票或酒店信息。
 - 用户已明确授权发布至现有 GitHub Pages 网站；只提交 winter-2026 目标文件，保留其余本地改动。
+
+- 同日扩展为五家：L’Escape、Mondrian、Hotel Naru、Westin Josun、Novotel Dongdaemun。新增两家已打开本次日期订房页：Mondrian Signature King 23㎡可取消无早 A$2,593、双人含早 A$2,891；Naru Deluxe River King 38㎡可取消无早 A$3,577、含早 A$4,161，不能与低楼层无景房混比。Naru 12/21 18:00 免费取消截止和 12/19 零付款截止不同。
