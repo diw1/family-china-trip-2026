@@ -1,0 +1,601 @@
+{
+  "trip": {
+    "title": "Daylesford 三日小假期",
+    "eyebrow": "MELBOURNE CUP WEEKEND · 2026",
+    "subtitle": "小火车、湖边散步，和一场慢慢泡的温泉。",
+    "startDate": "2026-11-01",
+    "endDate": "2026-11-03",
+    "dateLabel": "2026年11月1日—3日 · 周日至周二",
+    "group": "两家人 · 3位大人 + 2位5岁孩子",
+    "timezone": "Australia/Melbourne · 当地夏令时 AEDT",
+    "updatedAt": "2026-10-07",
+    "intro": [
+      "周日在墨尔本吃好再出发；坐完小火车、入住后去湖边，晚上18:30在Sault吃饭。",
+      "周一上午吃早餐、逛Lavandula，14:00泡温泉；泡完回别墅休息，晚餐留在Hepburn。",
+      "周二退房后10:15去Cliffy’s；瀑布看精神再决定，之后回墨尔本。"
+    ],
+    "highlights": [
+      {
+        "value": "3天",
+        "label": "11月1日—3日"
+      },
+      {
+        "value": "2晚",
+        "label": "Zulu Villa"
+      },
+      {
+        "value": "5人",
+        "label": "3大人 · 2个5岁孩子"
+      }
+    ]
+  },
+  "stay": {
+    "name": "Clifftop at Hepburn · Zulu Villa",
+    "status": "confirmed",
+    "statusLabel": "住宿已确认",
+    "address": "190 Mannings Road, Elevated Plains VIC 3461",
+    "dates": "11月1日入住 · 11月3日退房 · 2晚",
+    "checkIn": "周日15:00起",
+    "checkOut": "周二10:00前",
+    "notes": [
+      "住宿已订并付清；店方已书面确认3位大人、2位孩子均可入住，无额外费用。",
+      "2个卧室，每间都是King床。",
+      "周二建议09:45左右离开，为10:15的Cliffy’s预约留出路程和停车时间。",
+      "入住信息及私人订单请在原确认邮件中查看。"
+    ],
+    "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Zulu%20Villa%2C%20190%20Mannings%20Road%2C%20Elevated%20Plains%20VIC%203461&travelmode=driving",
+    "website": "https://www.clifftopathepburn.com.au/"
+  },
+  "bookings": [
+    {
+      "id": "train",
+      "title": "Daylesford Spa Country Railway",
+      "date": "2026-11-01",
+      "dateLabel": "11月1日 · 周日",
+      "time": "12:30—13:35",
+      "location": "Daylesford Station",
+      "notes": [
+        "12:30发车已订；13:35回到Daylesford是官方时刻表时间。",
+        "建议12:00到站，凭原订单到售票处换票。"
+      ],
+      "status": "confirmed",
+      "statusLabel": "已订",
+      "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Daylesford%20Railway%20Station%2C%2016-18%20Raglan%20Street%2C%20Daylesford%20VIC%203460&travelmode=driving",
+      "website": "https://daylesfordrailway.com.au/timetable"
+    },
+    {
+      "id": "stay",
+      "title": "Zulu Villa · 两晚住宿",
+      "date": "2026-11-01",
+      "dateLabel": "11月1日—3日",
+      "time": "15:00入住 · 10:00前退房",
+      "location": "Elevated Plains",
+      "notes": [
+        "3大2小入住已得到店方书面确认。"
+      ],
+      "status": "confirmed",
+      "statusLabel": "已订",
+      "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Zulu%20Villa%2C%20190%20Mannings%20Road%2C%20Elevated%20Plains%20VIC%203461&travelmode=driving",
+      "website": "https://www.clifftopathepburn.com.au/"
+    },
+    {
+      "id": "sault",
+      "title": "Sault · 周日晚餐",
+      "date": "2026-11-01",
+      "dateLabel": "11月1日 · 周日",
+      "time": "18:30",
+      "location": "Sailors Falls",
+      "notes": [
+        "5人预约已确认。部分时段可能限时2小时。",
+        "取消或改人数须提前48小时：最迟10月30日周五18:30前通知。",
+        "当前周末三道餐成人A$140、儿童A$65；3大2小基础餐费A$550，额外酒水、配菜和部分主菜升级另计。"
+      ],
+      "status": "confirmed",
+      "statusLabel": "已订",
+      "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Sault%20Restaurant%2C%202349%20Ballan-Daylesford%20Road%2C%20Sailors%20Falls%20VIC&travelmode=driving",
+      "website": "https://www.sault.com.au/"
+    },
+    {
+      "id": "bath",
+      "title": "Hepburn Bathhouse · Mineral Bathing",
+      "date": "2026-11-02",
+      "dateLabel": "11月2日 · 周一",
+      "time": "14:00—15:30",
+      "location": "Hepburn Mineral Springs Reserve",
+      "notes": [
+        "1位成人 + 1份家庭套餐（2成人、2儿童），合计3大2小。",
+        "预约总价A$245；本次是Bathhouse Mineral Bathing。"
+      ],
+      "status": "confirmed",
+      "statusLabel": "已订",
+      "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Hepburn%20Bathhouse%20and%20Spa%2C%20Mineral%20Springs%20Reserve%2C%20Hepburn%20Springs%20VIC&travelmode=driving",
+      "website": "https://www.hepburnbathhouse.com/"
+    },
+    {
+      "id": "rubens",
+      "title": "Rubens @ Hepburn · 周一晚餐",
+      "date": "2026-11-02",
+      "dateLabel": "11月2日 · 周一",
+      "time": "18:00",
+      "location": "Hepburn Springs",
+      "notes": [
+        "5人预约已确认，INSIDE · Fireplace室内壁炉区。",
+        "12岁以下儿童主餐A$14，含小杯饮料／牛奶／果汁；冰淇淋另A$2。"
+      ],
+      "status": "confirmed",
+      "statusLabel": "已订",
+      "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Rubens%20Restaurant%2C%2070%20Main%20Road%2C%20Hepburn%20Springs%20VIC%203461&travelmode=driving",
+      "website": "https://www.rubensrestaurant.com/"
+    },
+    {
+      "id": "cliffy",
+      "title": "Cliffy’s Emporium · 周二brunch",
+      "date": "2026-11-03",
+      "dateLabel": "11月3日 · 周二",
+      "time": "10:15",
+      "location": "Daylesford",
+      "notes": [
+        "5人预约已确认，Dining Room室内。",
+        "确认邮件要求至少提前24小时取消（团体预约48小时）；迟取消或未到收取A$20／人。"
+      ],
+      "status": "confirmed",
+      "statusLabel": "已订",
+      "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Cliffy's%20Emporium%2C%2030%20Raglan%20Street%2C%20Daylesford%20VIC%203460&travelmode=driving",
+      "website": "https://www.cliffysemporium.com.au/"
+    }
+  ],
+  "days": [
+    {
+      "id": "sunday",
+      "date": "2026-11-01",
+      "dateLabel": "11.01",
+      "weekday": "周日",
+      "navLabel": "周日 · 火车与湖边",
+      "title": "坐小火车，入住后再去湖边",
+      "subtitle": "墨尔本吃好再出发 · 18:30 Sault晚餐已订",
+      "route": [
+        "墨尔本",
+        "Daylesford Station",
+        "Zulu Villa",
+        "Lake Daylesford",
+        "Sault"
+      ],
+      "items": [
+        {
+          "id": "sun-melbourne",
+          "time": "上午",
+          "title": "在墨尔本吃好，再出发",
+          "status": "planned",
+          "statusLabel": "已定安排",
+          "summary": "周日的早午餐在墨尔本吃，不安排Daylesford brunch。",
+          "details": [
+            "按当天导航倒推出发时间，目标12:00到火车站。",
+            "午餐不另排固定餐厅。"
+          ],
+          "tip": "长周末留出路况余量；不用为了多一个景点赶路。"
+        },
+        {
+          "id": "sun-station",
+          "time": "12:00",
+          "title": "到火车站，换票等车",
+          "status": "planned",
+          "statusLabel": "建议到站时间",
+          "summary": "Daylesford Station · 16–18 Raglan Street。",
+          "details": [
+            "带上原订单，到售票处领取乘车票。",
+            "12:00是行程预留的提前量，不是店方强制到站时间。"
+          ],
+          "address": "16–18 Raglan Street, Daylesford VIC 3460",
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Daylesford%20Railway%20Station%2C%2016-18%20Raglan%20Street%2C%20Daylesford%20VIC%203460&travelmode=driving",
+          "website": "https://daylesfordrailway.com.au/your-journey"
+        },
+        {
+          "id": "sun-train",
+          "time": "12:30—13:35",
+          "title": "Daylesford Spa Country Railway",
+          "status": "confirmed",
+          "statusLabel": "已订",
+          "summary": "往返Bullarto，官方全程时刻表约65分钟。",
+          "details": [
+            "12:30 Daylesford出发 → 12:55 Bullarto。",
+            "13:10返程 → 13:35回到Daylesford。",
+            "回站后留空档，去住宿前可以补给，不再加必去活动。"
+          ],
+          "address": "16–18 Raglan Street, Daylesford",
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Daylesford%20Railway%20Station%2C%2016-18%20Raglan%20Street%2C%20Daylesford%20VIC%203460&travelmode=driving",
+          "website": "https://daylesfordrailway.com.au/timetable"
+        },
+        {
+          "id": "sun-checkin",
+          "time": "15:00",
+          "title": "入住Zulu Villa",
+          "status": "confirmed",
+          "statusLabel": "住宿已订",
+          "summary": "先放行李、熟悉房间，再出门。",
+          "details": [
+            "190 Mannings Road, Elevated Plains。",
+            "两卧室均为King床，3大2小已获得店方确认。"
+          ],
+          "address": "190 Mannings Road, Elevated Plains VIC 3461",
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Zulu%20Villa%2C%20190%20Mannings%20Road%2C%20Elevated%20Plains%20VIC%203461&travelmode=driving",
+          "website": "https://www.clifftopathepburn.com.au/"
+        },
+        {
+          "id": "sun-lake",
+          "time": "约16:00",
+          "title": "Lake Daylesford · 轻松走一小段",
+          "status": "planned",
+          "statusLabel": "计划",
+          "summary": "安排在小火车和入住之后；看鸭子、玩游乐场、沿湖短走。",
+          "details": [
+            "导航到Leggatt Street停车场。",
+            "轻松停留30–45分钟，沿湖走一段后原路返回；不用完成整圈。",
+            "为18:30 Sault晚餐留出开车、停车时间。"
+          ],
+          "address": "Leggatt Street car park, Lake Daylesford",
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Lake%20Daylesford%2C%20Leggatt%20Street%20car%20park%2C%20Daylesford%20VIC&travelmode=driving",
+          "website": "https://www.visithepburnshire.com.au/ATDW/Attractions/Lake-Daylesford-6476d7c178ee99fd78335b2a",
+          "tip": "累了就缩短湖边停留；晚餐时间已固定。"
+        },
+        {
+          "id": "sun-sault",
+          "time": "18:30",
+          "title": "Sault · 乡间晚餐",
+          "status": "confirmed",
+          "statusLabel": "已订 · 5人",
+          "summary": "三道菜正式晚餐，儿童有专门套餐。",
+          "details": [
+            "地址2349 Ballan-Daylesford Road, Sailors Falls。",
+            "当前成人三道餐A$140、儿童A$65（含饮料），五人基础餐费A$550。",
+            "孩子主餐可选意面、鱼或鸡柳；另有前菜和甜品。",
+            "从Zulu开车约17分钟；当天从湖边出发，按导航留出停车时间。",
+            "部分时段可能最多坐2小时；取消／改人数须提前48小时通知。"
+          ],
+          "address": "2349 Ballan-Daylesford Road, Sailors Falls VIC",
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Sault%20Restaurant%2C%202349%20Ballan-Daylesford%20Road%2C%20Sailors%20Falls%20VIC&travelmode=driving",
+          "website": "https://www.sault.com.au/sault-menu/",
+          "tip": "取消或改人数：最迟10月30日周五18:30前通知。"
+        },
+        {
+          "id": "sun-return",
+          "time": "晚餐后",
+          "title": "回Zulu休息",
+          "status": "planned",
+          "statusLabel": "计划",
+          "summary": "今晚到这里就好，明天上午再慢慢出门。",
+          "details": []
+        }
+      ]
+    },
+    {
+      "id": "monday",
+      "date": "2026-11-02",
+      "dateLabel": "11.02",
+      "weekday": "周一",
+      "navLabel": "周一 · 农场与温泉",
+      "title": "农场花园，下午泡温泉",
+      "subtitle": "上午Lavandula · 14:00 Bathhouse · 晚餐留在Hepburn",
+      "route": [
+        "Zulu Villa",
+        "Wombat Hill House",
+        "Lavandula",
+        "Hepburn Bathhouse",
+        "Zulu休息",
+        "Rubens"
+      ],
+      "items": [
+        {
+          "id": "mon-brunch",
+          "time": "约09:00",
+          "title": "Wombat Hill House · 早餐候选",
+          "status": "planned",
+          "statusLabel": "建议 · 未订",
+          "summary": "植物园里的咖啡馆；不接受预约，当天到店等位。",
+          "details": [
+            "官网常规08:00–15:00营业。",
+            "当前线上菜单参考：French toast／早餐pizza A$24、火腿芝士可颂A$13.50；堂食以当天菜单为准。",
+            "儿童可选可颂或与大人分食，未查到独立儿童菜单。",
+            "若等位太久，可换镇上的Larder；这是备选，不是另排一顿。"
+          ],
+          "address": "Wombat Hill Botanic Gardens, Daylesford",
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Wombat%20Hill%20House%2C%20Wombat%20Hill%20Botanic%20Gardens%2C%20Daylesford%20VIC&travelmode=driving",
+          "website": "https://www.wombathillhouse.com.au/cafe/",
+          "tip": "早餐地点尚未最终锁定；无需把花园整圈走完。"
+        },
+        {
+          "id": "mon-lav",
+          "time": "10:30—11:45",
+          "title": "Lavandula Swiss Italian Farm",
+          "status": "planned",
+          "statusLabel": "已选 · 未订票",
+          "summary": "看春季花园、石屋和农场动物，普通入园可现场购票。",
+          "details": [
+            "周一当前营业10:00–16:00，免费停车。",
+            "成人A$5、5–18岁A$1，3大2小当前合计A$17。",
+            "11月初以春季农场风景为主；官网薰衣草峰期是1月至初秋，不按盛花季期待。",
+            "离开后留出休息和去Bathhouse的时间，午饭自行安排。"
+          ],
+          "address": "350 Hepburn-Newstead Road, Shepherds Flat VIC",
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Lavandula%20Swiss%20Italian%20Farm%2C%20350%20Hepburn-Newstead%20Road%2C%20Shepherds%20Flat%20VIC&travelmode=driving",
+          "website": "https://www.lavandula.com.au/pages/visitor-information"
+        },
+        {
+          "id": "mon-bath-arrive",
+          "time": "约13:40",
+          "title": "到Bathhouse，留出换衣时间",
+          "status": "planned",
+          "statusLabel": "建议到场时间",
+          "summary": "14:00开始前先停车、报到和换衣。",
+          "details": [
+            "带泳衣、拖鞋、干衣物；毛巾按原预订权益核对。",
+            "时间以当天场馆报到要求为准。"
+          ],
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Hepburn%20Bathhouse%20and%20Spa%2C%20Mineral%20Springs%20Reserve%2C%20Hepburn%20Springs%20VIC&travelmode=driving",
+          "website": "https://www.hepburnbathhouse.com/"
+        },
+        {
+          "id": "mon-bath",
+          "time": "14:00—15:30",
+          "title": "Bathhouse Mineral Bathing",
+          "status": "confirmed",
+          "statusLabel": "已订 · 3大2小",
+          "summary": "90分钟矿泉浴，原预约总价A$245。",
+          "details": [
+            "1份成人票 + 1份家庭套餐（2成人、2儿童）。",
+            "使用本次预约的Bathhouse Mineral Bathing区域。"
+          ],
+          "address": "Hepburn Mineral Springs Reserve, Hepburn Springs",
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Hepburn%20Bathhouse%20and%20Spa%2C%20Mineral%20Springs%20Reserve%2C%20Hepburn%20Springs%20VIC&travelmode=driving",
+          "website": "https://www.hepburnbathhouse.com/"
+        },
+        {
+          "id": "mon-rest",
+          "time": "泡完之后",
+          "title": "回Zulu休息",
+          "status": "planned",
+          "statusLabel": "计划",
+          "summary": "不叠加远处活动，缓一缓再吃晚饭。",
+          "details": [
+            "有约两小时的休息空档，按孩子和大人的精神调整。"
+          ],
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Zulu%20Villa%2C%20190%20Mannings%20Road%2C%20Elevated%20Plains%20VIC%203461&travelmode=driving"
+        },
+        {
+          "id": "mon-rubens",
+          "time": "18:00",
+          "title": "Rubens @ Hepburn",
+          "status": "confirmed",
+          "statusLabel": "已订 · 5人",
+          "summary": "INSIDE · Fireplace，室内壁炉区。",
+          "details": [
+            "地址70 Main Road, Hepburn Springs。",
+            "披萨、意面等；12岁以下儿童主餐A$14含小杯饮料／牛奶／果汁。",
+            "孩子可选小披萨或意面，冰淇淋另A$2。",
+            "取消及人数变更以原确认条款为准。"
+          ],
+          "address": "70 Main Road, Hepburn Springs VIC 3461",
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Rubens%20Restaurant%2C%2070%20Main%20Road%2C%20Hepburn%20Springs%20VIC%203461&travelmode=driving",
+          "website": "https://www.rubensrestaurant.com/menu/"
+        },
+        {
+          "id": "mon-return",
+          "time": "晚餐后",
+          "title": "回住宿，收一部分行李",
+          "status": "planned",
+          "statusLabel": "计划",
+          "summary": "明早退房后直接去Cliffy’s，晚上先把不再用的东西装好。",
+          "details": []
+        }
+      ]
+    },
+    {
+      "id": "tuesday",
+      "date": "2026-11-03",
+      "dateLabel": "11.03",
+      "weekday": "周二 · Cup Day",
+      "navLabel": "周二 · Brunch与返程",
+      "title": "吃完brunch，再慢慢回家",
+      "subtitle": "10:15 Cliffy’s已订 · Trentham Falls只作可选",
+      "route": [
+        "Zulu Villa",
+        "Cliffy’s Emporium",
+        "Trentham Falls（可选）",
+        "墨尔本"
+      ],
+      "items": [
+        {
+          "id": "tue-checkout",
+          "time": "约09:45",
+          "title": "退房离开Zulu",
+          "status": "planned",
+          "statusLabel": "建议出发时间",
+          "summary": "住宿要求10:00前退房；提前装好行李，给路程和停车留余量。",
+          "details": [
+            "09:45是建议离开时间，住宿退房截止仍是10:00。",
+            "直接前往Cliffy’s，不再安排另一顿早餐。"
+          ],
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Zulu%20Villa%2C%20190%20Mannings%20Road%2C%20Elevated%20Plains%20VIC%203461&travelmode=driving"
+        },
+        {
+          "id": "tue-cliffy",
+          "time": "10:15",
+          "title": "Cliffy’s Emporium · brunch",
+          "status": "confirmed",
+          "statusLabel": "已订 · 5人",
+          "summary": "Dining Room室内，时间是10:15。",
+          "details": [
+            "地址30 Raglan Street, Daylesford。",
+            "2026年10月菜单：Benedict A$29、Country Breakfast A$36、Middle Eastern Eggs A$25。",
+            "未查到独立儿童菜单，可按当天菜单选择适合分食的菜。",
+            "确认邮件要求至少提前24小时取消（团体预约48小时）；迟取消或未到A$20／人。"
+          ],
+          "address": "30 Raglan Street, Daylesford VIC 3460",
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Cliffy's%20Emporium%2C%2030%20Raglan%20Street%2C%20Daylesford%20VIC%203460&travelmode=driving",
+          "website": "https://www.cliffysemporium.com.au/menu"
+        },
+        {
+          "id": "tue-falls",
+          "time": "brunch之后",
+          "title": "Trentham Falls · 看精神再决定",
+          "status": "optional",
+          "statusLabel": "可选",
+          "summary": "只走停车场到正式观景台，不下谷。",
+          "details": [
+            "从Cliffy’s到观景停车区开车约20分钟，长周末可预留25–30分钟。",
+            "终点设为Trentham Falls Lookout／Trentham Scenic Reserve Rd停车区域，不是Trentham镇。",
+            "观景路径有台阶或碎石坡道，按孩子体力走。",
+            "不能去瀑布底部，不能越过围栏；出发前看Parks Victoria最新开放信息。"
+          ],
+          "address": "Trentham Falls Lookout, Trentham Scenic Reserve Road",
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=-37.3747175%2C144.3250146&travelmode=driving",
+          "website": "https://www.parks.vic.gov.au/places-to-see/parks/coliban-river-scenic-reserve/attractions/trentham-falls",
+          "tip": "累了、下雨或现场关闭就跳过，直接回墨尔本。"
+        },
+        {
+          "id": "tue-home",
+          "time": "之后",
+          "title": "回墨尔本",
+          "status": "planned",
+          "statusLabel": "计划",
+          "summary": "按当天路况回家，返程不再安排必去站点。",
+          "details": [
+            "途中需要吃饭或休息时再停，不预设固定餐厅。"
+          ]
+        }
+      ]
+    }
+  ],
+  "checklist": [
+    {
+      "id": "confirmations",
+      "label": "把火车、温泉、餐厅和住宿确认放到手机里",
+      "detail": "保留原邮件／电子票，网页只用于看行程。"
+    },
+    {
+      "id": "sault-cutoff",
+      "label": "如需取消Sault或改人数，10月30日18:30前通知",
+      "detail": "按这次确认的48小时条款执行。"
+    },
+    {
+      "id": "zulu-arrival",
+      "label": "核对Zulu入住方式与到达说明",
+      "detail": "查看原住宿邮件，确认到达流程。"
+    },
+    {
+      "id": "bathing",
+      "label": "带泳衣、拖鞋、干衣物并核对毛巾权益",
+      "detail": "周一14:00开始Bathhouse Mineral Bathing。"
+    },
+    {
+      "id": "spring",
+      "label": "带薄外套、雨具、防晒和适合短走的鞋",
+      "detail": "花园、湖边及瀑布按当天天气调整。"
+    },
+    {
+      "id": "cliffy-terms",
+      "label": "如需更改Cliffy’s预约，提前联系餐厅",
+      "detail": "取消至少提前24小时（团体预约48小时）；迟取消或未到A$20／人。"
+    },
+    {
+      "id": "falls-open",
+      "label": "出发前查看Trentham Falls开放状态",
+      "detail": "只走官方观景路径，瀑布是可选项。"
+    },
+    {
+      "id": "packing",
+      "label": "周一晚先收行李，周二09:45左右离开",
+      "detail": "10:00前退房，10:15 Cliffy’s brunch。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "rail-timetable",
+      "title": "铁路 · 官方时刻表",
+      "url": "https://daylesfordrailway.com.au/timetable",
+      "note": "12:30出发、13:35回站。"
+    },
+    {
+      "id": "rail-journey",
+      "title": "铁路 · 乘车说明",
+      "url": "https://daylesfordrailway.com.au/your-journey",
+      "note": "到售票处凭订单换票。"
+    },
+    {
+      "id": "zulu",
+      "title": "Clifftop · 别墅资料",
+      "url": "https://www.clifftopathepburn.com.au/assets/pdf/Compare-Villas.pdf",
+      "note": "住宿日期、付款及3大2小入住依据本次确认邮件。"
+    },
+    {
+      "id": "lake",
+      "title": "Lake Daylesford · 当地官方旅游页",
+      "url": "https://www.visithepburnshire.com.au/ATDW/Attractions/Lake-Daylesford-6476d7c178ee99fd78335b2a",
+      "note": "湖边游乐场、停车与步道。"
+    },
+    {
+      "id": "sault-menu",
+      "title": "Sault · 当前菜单",
+      "url": "https://www.sault.com.au/sault-menu/",
+      "note": "周末三道餐与儿童套餐。"
+    },
+    {
+      "id": "sault-hours",
+      "title": "Sault · 营业与预约说明",
+      "url": "https://www.sault.com.au/bookings-general/",
+      "note": "2026年11月1日起恢复周日晚餐。"
+    },
+    {
+      "id": "wombat",
+      "title": "Wombat Hill House · 营业与菜单说明",
+      "url": "https://www.wombathillhouse.com.au/cafe/",
+      "note": "每日08:00–15:00；不接受预约；菜单随季节调整。"
+    },
+    {
+      "id": "larder",
+      "title": "Larder · 早餐备用菜单",
+      "url": "https://www.larderdaylesford.com.au/menu",
+      "note": "儿童mini hotcakes A$13、蛋吐司A$9.50；不接受预约。"
+    },
+    {
+      "id": "lav",
+      "title": "Lavandula · 游客信息",
+      "url": "https://www.lavandula.com.au/pages/visitor-information",
+      "note": "周一开放时间、成人及5–18岁门票、花季说明。"
+    },
+    {
+      "id": "bath",
+      "title": "Hepburn Bathhouse · 官网",
+      "url": "https://www.hepburnbathhouse.com/",
+      "note": "本次14:00–15:30与A$245依据已确认预约。"
+    },
+    {
+      "id": "rubens",
+      "title": "Rubens · 菜单",
+      "url": "https://www.rubensrestaurant.com/menu/",
+      "note": "本次5人室内壁炉桌依据已确认预约。"
+    },
+    {
+      "id": "rubens-kids",
+      "title": "Rubens · 儿童菜单",
+      "url": "https://www.rubensrestaurant.com/wp-content/uploads/2026/08/Kids-Meals.pdf",
+      "note": "12岁以下儿童主餐A$14含小杯饮料。"
+    },
+    {
+      "id": "cliffy",
+      "title": "Cliffy’s · 当前菜单",
+      "url": "https://www.cliffysemporium.com.au/menu",
+      "note": "本次11月3日10:15五人Dining Room及取消规则依据确认邮件。"
+    },
+    {
+      "id": "falls",
+      "title": "Parks Victoria · Trentham Falls",
+      "url": "https://www.parks.vic.gov.au/places-to-see/parks/coliban-river-scenic-reserve/attractions/trentham-falls",
+      "note": "只到正式观景台，不可下谷到瀑布底部。"
+    }
+  ],
+  "notes": [
+    "所有时间为墨尔本当地时间。已订项目按本次确认记录；其他具体时刻是建议安排，可按天气和精神调整。",
+    "餐饮菜单、入园价格和开放状态核查于2026年10月7日，出行前以店方最新信息为准。",
+    "网页不展示私人订单、预订编号或完整确认邮件。"
+  ]
+}
