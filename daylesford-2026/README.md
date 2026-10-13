@@ -8,7 +8,8 @@
 
 - 日程、地址、预约状态、菜单参考、清单与来源统一更新 `trip-data.json`。
 - `confirmed` 表示本次确认的预约；`planned` 表示计划或建议；`optional` 表示可跳过。
-- 保留准确的预约时间：周日火车 12:30、Sault 18:30；周一 Bathhouse 14:00–15:30、Rubens 18:00；周二 Cliffy’s 10:15。
+- 周日小火车已取消；上午Enchanted Adventure Tree Surfing尚未预约，建议10:15 Nippers。湖边散步改到周二brunch之后。
+- 保留准确的预约时间：周日Sault 18:30；周一 Bathhouse 14:00–15:30、Rubens 18:00；周二 Cliffy’s 10:15。
 - Zulu 住宿为 11 月 1–3 日两晚，15:00 起入住、10:00 前退房。入住人数已得到酒店书面确认。
 - 清单仅保存在本机浏览器；打印按钮调用浏览器的打印或保存 PDF 功能。
 - `index.html` 内的无 JavaScript 简版只包含已确认安排；预约变化时同时核对这份简版。

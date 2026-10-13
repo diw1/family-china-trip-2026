@@ -2,17 +2,17 @@
   "trip": {
     "title": "Daylesford 三日小假期",
     "eyebrow": "MELBOURNE CUP WEEKEND · 2026",
-    "subtitle": "小火车、湖边散步，和一场慢慢泡的温泉。",
+    "subtitle": "先去树间冒险，再到乡间住两晚，慢慢泡温泉、散步到湖边。",
     "startDate": "2026-11-01",
     "endDate": "2026-11-03",
     "dateLabel": "2026年11月1日—3日 · 周日至周二",
     "group": "两家人 · 3位大人 + 2位5岁孩子",
     "timezone": "Australia/Melbourne · 当地夏令时 AEDT",
-    "updatedAt": "2026-10-07",
+    "updatedAt": "2026-10-14",
     "intro": [
-      "周日在墨尔本吃好再出发；坐完小火车、入住后去湖边，晚上18:30在Sault吃饭。",
+      "周日上午先去Mornington的Enchanted Adventure玩Tree Surfing；原小火车已取消。下午前往Zulu入住，18:30在Sault吃饭。",
       "周一上午吃早餐、逛Lavandula，14:00泡温泉；泡完回别墅休息，晚餐留在Hepburn。",
-      "周二退房后10:15去Cliffy’s；瀑布看精神再决定，之后回墨尔本。"
+      "周二退房后10:15去Cliffy’s，吃完到湖边走一小段；瀑布看精神再决定，之后回墨尔本。"
     ],
     "highlights": [
       {
@@ -47,22 +47,6 @@
     "website": "https://www.clifftopathepburn.com.au/"
   },
   "bookings": [
-    {
-      "id": "train",
-      "title": "Daylesford Spa Country Railway",
-      "date": "2026-11-01",
-      "dateLabel": "11月1日 · 周日",
-      "time": "12:30—13:35",
-      "location": "Daylesford Station",
-      "notes": [
-        "12:30发车已订；13:35回到Daylesford是官方时刻表时间。",
-        "建议12:00到站，凭原订单到售票处换票。"
-      ],
-      "status": "confirmed",
-      "statusLabel": "已订",
-      "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Daylesford%20Railway%20Station%2C%2016-18%20Raglan%20Street%2C%20Daylesford%20VIC%203460&travelmode=driving",
-      "website": "https://daylesfordrailway.com.au/timetable"
-    },
     {
       "id": "stay",
       "title": "Zulu Villa · 两晚住宿",
@@ -150,92 +134,91 @@
       "date": "2026-11-01",
       "dateLabel": "11.01",
       "weekday": "周日",
-      "navLabel": "周日 · 火车与湖边",
-      "title": "坐小火车，入住后再去湖边",
-      "subtitle": "墨尔本吃好再出发 · 18:30 Sault晚餐已订",
+      "navLabel": "周日 · 树间冒险",
+      "title": "Mornington树间冒险，再去乡间入住",
+      "subtitle": "小火车已取消 · Tree Surfing场次未订 · 18:30 Sault已订",
       "route": [
         "墨尔本",
-        "Daylesford Station",
+        "Enchanted Adventure · Arthurs Seat",
         "Zulu Villa",
-        "Lake Daylesford",
         "Sault"
       ],
       "items": [
         {
-          "id": "sun-melbourne",
-          "time": "上午",
-          "title": "在墨尔本吃好，再出发",
+          "id": "sun-enchanted-arrive",
+          "time": "建议09:45前",
+          "title": "到Enchanted Adventure，报到准备",
           "status": "planned",
-          "statusLabel": "已定安排",
-          "summary": "周日的早午餐在墨尔本吃，不安排Daylesford brunch。",
+          "statusLabel": "建议 · 场次未订",
+          "summary": "先在Mornington Peninsula玩Tree Surfing；具体出发时间按家到园区的导航倒推。",
           "details": [
-            "按当天导航倒推出发时间，目标12:00到火车站。",
-            "午餐不另排固定餐厅。"
+            "地址55 Purves Road, Arthurs Seat。",
+            "官网9月至4月常规09:00–17:00营业；Tree Surfing至少提前30分钟报到。",
+            "穿包脚平底运动鞋和方便活动的衣服；提前完成活动所需waiver。"
           ],
-          "tip": "长周末留出路况余量；不用为了多一个景点赶路。"
+          "address": "55 Purves Road, Arthurs Seat VIC 3936",
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Enchanted+Adventure,+55+Purves+Road,+Arthurs+Seat+VIC&travelmode=driving",
+          "website": "https://www.enchantedadventure.com.au/faqs/"
         },
         {
-          "id": "sun-station",
-          "time": "12:00",
-          "title": "到火车站，换票等车",
+          "id": "sun-tree-surfing",
+          "time": "建议10:15—11:15",
+          "title": "Tree Surfing Nippers · 两个孩子分别由成人陪同",
           "status": "planned",
-          "statusLabel": "建议到站时间",
-          "summary": "Daylesford Station · 16–18 Raglan Street。",
+          "statusLabel": "已选活动 · 未预约",
+          "summary": "Nippers一小时；两个5岁孩子各需一位成人上树陪同，1:1。",
           "details": [
-            "带上原订单，到售票处领取乘车票。",
-            "12:00是行程预留的提前量，不是店方强制到站时间。"
+            "两名儿童与两名陪同成人都需要Nippers票；陪同者只买普通入园票不够。",
+            "Nippers票已含普通入园；第3位成人若不攀爬，可买General Admission。",
+            "当前票面参考：儿童A$64×2、陪同成人A$74×2、普通成人入园A$42，合计A$318；手套和线上附费以结算为准。",
+            "10月14日查询时，11月1日10:15有可选名额；此处是建议场次，尚未预订。"
           ],
-          "address": "16–18 Raglan Street, Daylesford VIC 3460",
-          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Daylesford%20Railway%20Station%2C%2016-18%20Raglan%20Street%2C%20Daylesford%20VIC%203460&travelmode=driving",
-          "website": "https://daylesfordrailway.com.au/your-journey"
+          "address": "Enchanted Adventure, 55 Purves Road, Arthurs Seat",
+          "website": "https://www.enchantedadventure.com.au/experiences/nippers-tree-surfing/",
+          "tip": "如另选场次，仍以13:00左右离园为目标，给下午跨城开车留余量。"
         },
         {
-          "id": "sun-train",
-          "time": "12:30—13:35",
-          "title": "Daylesford Spa Country Railway",
-          "status": "confirmed",
-          "statusLabel": "已订",
-          "summary": "往返Bullarto，官方全程时刻表约65分钟。",
+          "id": "sun-enchanted-park",
+          "time": "Tree Surfing之后",
+          "title": "再玩一会园区地面项目",
+          "status": "planned",
+          "statusLabel": "计划",
+          "summary": "按精神玩普通入园包含的迷宫、花园或滑道；不追求全部玩完。",
           "details": [
-            "12:30 Daylesford出发 → 12:55 Bullarto。",
-            "13:10返程 → 13:35回到Daylesford。",
-            "回站后留空档，去住宿前可以补给，不再加必去活动。"
+            "午饭自行安排，不另排固定餐厅。",
+            "尽量13:00左右离园；不要把园区停留拖到下午太晚。"
           ],
-          "address": "16–18 Raglan Street, Daylesford",
-          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Daylesford%20Railway%20Station%2C%2016-18%20Raglan%20Street%2C%20Daylesford%20VIC%203460&travelmode=driving",
-          "website": "https://daylesfordrailway.com.au/timetable"
+          "website": "https://www.enchantedadventure.com.au/experiences/admission/"
+        },
+        {
+          "id": "sun-drive",
+          "time": "约13:00出发",
+          "title": "从Arthurs Seat开往Zulu",
+          "status": "planned",
+          "statusLabel": "建议时间",
+          "summary": "跨城段预留3–3.5小时，包括交通缓冲和一次休息。",
+          "details": [
+            "10月14日当前最快导航约207公里、2小时34分钟，路线包含收费道路；这不是11月1日的路况预测。",
+            "途中过休息站时再补给，孩子需要就停。"
+          ],
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&origin=Enchanted+Adventure,+55+Purves+Road,+Arthurs+Seat+VIC&destination=190+Mannings+Road,+Elevated+Plains+VIC&travelmode=driving"
         },
         {
           "id": "sun-checkin",
-          "time": "15:00",
+          "time": "约16:00—16:30",
           "title": "入住Zulu Villa",
           "status": "confirmed",
           "statusLabel": "住宿已订",
-          "summary": "先放行李、熟悉房间，再出门。",
+          "summary": "下午抵达Zulu，先放行李、休息，再去晚餐；住宿15:00起可以入住。",
           "details": [
             "190 Mannings Road, Elevated Plains。",
-            "两卧室均为King床，3大2小已获得店方确认。"
+            "两卧室均为King床，3大2小已获得店方确认。",
+            "到达时间是建议安排，按跨城路况与休息停留调整。"
           ],
           "address": "190 Mannings Road, Elevated Plains VIC 3461",
           "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Zulu%20Villa%2C%20190%20Mannings%20Road%2C%20Elevated%20Plains%20VIC%203461&travelmode=driving",
-          "website": "https://www.clifftopathepburn.com.au/"
-        },
-        {
-          "id": "sun-lake",
-          "time": "约16:00",
-          "title": "Lake Daylesford · 轻松走一小段",
-          "status": "planned",
-          "statusLabel": "计划",
-          "summary": "安排在小火车和入住之后；看鸭子、玩游乐场、沿湖短走。",
-          "details": [
-            "导航到Leggatt Street停车场。",
-            "轻松停留30–45分钟，沿湖走一段后原路返回；不用完成整圈。",
-            "为18:30 Sault晚餐留出开车、停车时间。"
-          ],
-          "address": "Leggatt Street car park, Lake Daylesford",
-          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Lake%20Daylesford%2C%20Leggatt%20Street%20car%20park%2C%20Daylesford%20VIC&travelmode=driving",
-          "website": "https://www.visithepburnshire.com.au/ATDW/Attractions/Lake-Daylesford-6476d7c178ee99fd78335b2a",
-          "tip": "累了就缩短湖边停留；晚餐时间已固定。"
+          "website": "https://www.clifftopathepburn.com.au/",
+          "tip": "周日湖边移到周二，今天不再叠加景点。"
         },
         {
           "id": "sun-sault",
@@ -248,7 +231,7 @@
             "地址2349 Ballan-Daylesford Road, Sailors Falls。",
             "当前成人三道餐A$140、儿童A$65（含饮料），五人基础餐费A$550。",
             "孩子主餐可选意面、鱼或鸡柳；另有前菜和甜品。",
-            "从Zulu开车约17分钟；当天从湖边出发，按导航留出停车时间。",
+            "从Zulu开车约17分钟；建议18:00左右离开Zulu，为停车和入座留出时间。",
             "部分时段可能最多坐2小时；取消／改人数须提前48小时通知。"
           ],
           "address": "2349 Ballan-Daylesford Road, Sailors Falls VIC",
@@ -393,12 +376,13 @@
       "date": "2026-11-03",
       "dateLabel": "11.03",
       "weekday": "周二 · Cup Day",
-      "navLabel": "周二 · Brunch与返程",
-      "title": "吃完brunch，再慢慢回家",
-      "subtitle": "10:15 Cliffy’s已订 · Trentham Falls只作可选",
+      "navLabel": "周二 · Brunch与湖边",
+      "title": "吃完brunch，到湖边走一小段",
+      "subtitle": "10:15 Cliffy’s已订 · 湖边短走 · 瀑布可选",
       "route": [
         "Zulu Villa",
         "Cliffy’s Emporium",
+        "Lake Daylesford",
         "Trentham Falls（可选）",
         "墨尔本"
       ],
@@ -434,6 +418,22 @@
           "website": "https://www.cliffysemporium.com.au/menu"
         },
         {
+          "id": "tue-lake",
+          "time": "brunch之后",
+          "title": "Lake Daylesford · 轻松走一小段",
+          "status": "planned",
+          "statusLabel": "计划",
+          "summary": "周日湖边改到今天；看鸭子、玩游乐场、沿湖短走。",
+          "details": [
+            "导航到Leggatt Street停车场。",
+            "轻松停留30–45分钟，沿湖走一段后原路返回；不用完成整圈。"
+          ],
+          "address": "Leggatt Street car park, Lake Daylesford",
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Lake%20Daylesford%2C%20Leggatt%20Street%20car%20park%2C%20Daylesford%20VIC&travelmode=driving",
+          "website": "https://www.visithepburnshire.com.au/ATDW/Attractions/Lake-Daylesford-6476d7c178ee99fd78335b2a",
+          "tip": "停留30–45分钟就好；瀑布另看体力和天气决定。"
+        },
+        {
           "id": "tue-falls",
           "time": "brunch之后",
           "title": "Trentham Falls · 看精神再决定",
@@ -467,9 +467,14 @@
   ],
   "checklist": [
     {
+      "id": "enchanted-booking",
+      "label": "提前预订Nippers场次，并核对原credit voucher",
+      "detail": "两个5岁孩子各需一位成人上树陪同；券码和私人兑换链接在原邮件查看。"
+    },
+    {
       "id": "confirmations",
-      "label": "把火车、温泉、餐厅和住宿确认放到手机里",
-      "detail": "保留原邮件／电子票，网页只用于看行程。"
+      "label": "把Tree Surfing、温泉、餐厅和住宿确认放到手机里",
+      "detail": "Tree Surfing尚未预约；保留原邮件／电子票，网页只用于看行程。"
     },
     {
       "id": "sault-cutoff",
@@ -509,16 +514,28 @@
   ],
   "sources": [
     {
-      "id": "rail-timetable",
-      "title": "铁路 · 官方时刻表",
-      "url": "https://daylesfordrailway.com.au/timetable",
-      "note": "12:30出发、13:35回站。"
+      "id": "enchanted-nippers",
+      "title": "Enchanted Adventure · Nippers",
+      "url": "https://www.enchantedadventure.com.au/experiences/nippers-tree-surfing/",
+      "note": "一小时、4–5岁成人1:1陪同与当前票面价格。"
     },
     {
-      "id": "rail-journey",
-      "title": "铁路 · 乘车说明",
-      "url": "https://daylesfordrailway.com.au/your-journey",
-      "note": "到售票处凭订单换票。"
+      "id": "enchanted-admission",
+      "title": "Enchanted Adventure · 普通入园",
+      "url": "https://www.enchantedadventure.com.au/experiences/admission/",
+      "note": "Nippers包含普通入园；第三成人不攀爬时的入园选项。"
+    },
+    {
+      "id": "enchanted-faq",
+      "title": "Enchanted Adventure · FAQ",
+      "url": "https://www.enchantedadventure.com.au/faqs/",
+      "note": "季节营业时间与提前30分钟报到说明。"
+    },
+    {
+      "id": "enchanted-terms",
+      "title": "Enchanted Adventure · 活动条款",
+      "url": "https://www.enchantedadventure.com.au/terms-and-conditions/",
+      "note": "参加要求、陪同与手套规定。"
     },
     {
       "id": "zulu",
@@ -594,8 +611,9 @@
     }
   ],
   "notes": [
+    "10月14日更新：周日小火车已取消，改为上午Enchanted Adventure；Tree Surfing尚未预约，建议时间不代表已订。",
     "所有时间为墨尔本当地时间。已订项目按本次确认记录；其他具体时刻是建议安排，可按天气和精神调整。",
-    "餐饮菜单、入园价格和开放状态核查于2026年10月7日，出行前以店方最新信息为准。",
+    "原餐饮、农场与温泉资料核查于2026年10月7日；Tree Surfing资料与跨城路线核查于10月14日，出行前以最新信息为准。",
     "网页不展示私人订单、预订编号或完整确认邮件。"
   ]
 }
