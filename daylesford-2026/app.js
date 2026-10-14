@@ -183,7 +183,6 @@
     const subtotal = (entries) => entries.length ? entries.reduce((sum, row) => sum + row.cents, 0) : null;
     const confirmedTotal = subtotal(confirmed);
     const referenceTotal = subtotal([...confirmed, ...estimated]);
-    const intro = element("p", "costs-intro", "全部费用由两家各承担50%，不按人数区分。金额以澳元（AUD）显示。");
     const wrapper = element("div", "cost-table-wrap");
     wrapper.setAttribute("role", "region");
     wrapper.setAttribute("aria-label", "费用明细，可左右滑动查看");
@@ -228,7 +227,7 @@
     const missing = element("p", "costs-note", unresolved.length
       ? `另有${unresolved.length}项待确认或金额未知，未计入以上小计。最终总额待餐饮账单、酒水与其他附加费、路费等补齐后确认。`
       : "以上预算参考不等于最终应付；餐饮账单、酒水与其他附加费、路费等仍按实际金额补齐。");
-    container.replaceChildren(intro, wrapper, summaries, missing);
+    container.replaceChildren(wrapper, summaries, missing);
     appendNotes(container, costs.notes, "costs-note");
   }
 
