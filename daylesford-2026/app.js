@@ -318,7 +318,7 @@
       const anchor = element("a", "day-link costs-link");
       anchor.href = "#costs";
       anchor.dataset.dayLink = "costs";
-      anchor.append(element("span", "", "50 / 50"), element("strong", "", "费用分账"));
+      anchor.append(element("span", "", "50 / 50"), element("strong", "", "费用"));
       navLinks.push(anchor);
       sections.push(costsSection);
     }
