@@ -10,7 +10,7 @@
     "timezone": "Australia/Melbourne · 当地夏令时 AEDT",
     "updatedAt": "2026-10-14",
     "intro": [
-      "周日上午先去Mornington的Enchanted Adventure玩Tree Surfing；原小火车已取消。下午前往Zulu入住，18:30在Sault吃饭。",
+      "周日上午09:45前到Mornington的Enchanted Adventure，10:15–11:15 Nippers已订；原小火车已取消。下午前往Zulu入住，18:30在Sault吃饭。",
       "周一上午吃早餐、逛Lavandula，14:00泡温泉；泡完回别墅休息，晚餐留在Hepburn。",
       "周二退房后10:15去Cliffy’s，吃完到湖边走一小段；瀑布看精神再决定，之后回墨尔本。"
     ],
@@ -47,6 +47,23 @@
     "website": "https://www.clifftopathepburn.com.au/"
   },
   "bookings": [
+    {
+      "id": "enchanted",
+      "title": "Enchanted Adventure · Nippers与入园",
+      "date": "2026-11-01",
+      "dateLabel": "11月1日 · 周日",
+      "time": "10:15—11:15",
+      "location": "Arthurs Seat · Mornington Peninsula",
+      "notes": [
+        "Nippers已确认：1位成人 + 2名6岁儿童；另2位成人General Admission为09:00入园时段，可停留全天。",
+        "至少提前30分钟到园，最迟09:45；3双园区手套已订。",
+        "出发前由参加活动的成人本人签waiver，儿童部分由其家长或监护人签署。"
+      ],
+      "status": "confirmed",
+      "statusLabel": "已订 · 5人",
+      "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Enchanted+Adventure,+55+Purves+Road,+Arthurs+Seat+VIC&travelmode=driving",
+      "website": "https://www.enchantedadventure.com.au/experiences/nippers-tree-surfing/"
+    },
     {
       "id": "stay",
       "title": "Zulu Villa · 两晚住宿",
@@ -136,7 +153,7 @@
       "weekday": "周日",
       "navLabel": "周日 · 树间冒险",
       "title": "Mornington树间冒险，再去乡间入住",
-      "subtitle": "小火车已取消 · Tree Surfing场次未订 · 18:30 Sault已订",
+      "subtitle": "10:15 Nippers已订 · 小火车已取消 · 18:30 Sault已订",
       "route": [
         "墨尔本",
         "Enchanted Adventure · Arthurs Seat",
@@ -146,15 +163,15 @@
       "items": [
         {
           "id": "sun-enchanted-arrive",
-          "time": "建议09:45前",
+          "time": "09:45前",
           "title": "到Enchanted Adventure，报到准备",
           "status": "planned",
-          "statusLabel": "建议 · 场次未订",
-          "summary": "先在Mornington Peninsula玩Tree Surfing；具体出发时间按家到园区的导航倒推。",
+          "statusLabel": "报到时间 · 活动已订",
+          "summary": "为已确认的10:15 Nippers提前30分钟到园；具体出发时间按家到园区的导航倒推。",
           "details": [
             "地址55 Purves Road, Arthurs Seat。",
             "官网9月至4月常规09:00–17:00营业；Tree Surfing至少提前30分钟报到。",
-            "穿包脚平底运动鞋和方便活动的衣服；提前完成活动所需waiver。"
+            "带确认电子票，穿包脚平底运动鞋和方便活动的衣服；出发前由本人及孩子家长或监护人完成waiver。"
           ],
           "address": "55 Purves Road, Arthurs Seat VIC 3936",
           "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Enchanted+Adventure,+55+Purves+Road,+Arthurs+Seat+VIC&travelmode=driving",
@@ -162,21 +179,21 @@
         },
         {
           "id": "sun-tree-surfing",
-          "time": "建议10:15—11:15",
+          "time": "10:15—11:15",
           "title": "Tree Surfing Nippers · 1成人 + 2儿童",
-          "status": "planned",
-          "statusLabel": "已选活动 · 未预约",
-          "summary": "Nippers一小时；两个孩子都是6岁，可自行攀爬。本次拟安排1位成人与2位孩子参加。",
+          "status": "confirmed",
+          "statusLabel": "已订 · 1成人 + 2儿童",
+          "summary": "Nippers一小时已确认，1位成人与2名6岁孩子参加；另2位成人普通入园。",
           "details": [
-            "拟购票组合：1位成人与2位儿童的Nippers票，另2位成人买General Admission，在地面活动。",
+            "已确认组合：1位成人与2位儿童的Nippers票，另2位成人持General Admission，在地面活动。",
             "6岁孩子可自行完成Nippers；若需要成人协助，仍按1成人协助1儿童。本次只有1位成人上树，另一个孩子须能够自行完成。",
             "Nippers票已含普通入园；两位不攀爬成人只需General Admission。",
-            "当前票面参考：儿童A$64×2、成人Nippers A$74、普通成人入园A$42×2；攀爬者须戴手套，园区手套A$3／双，线上附费以结算为准。",
-            "10月14日查询时，11月1日10:15有可选名额；此处是建议场次，尚未预订。"
+            "另2位成人的General Admission为09:00入园时段，可停留全天；行程仍要求09:45前到园。",
+            "3双园区手套已订，供3名攀爬者使用。活动确认电子票和入园票保存在手机中。"
           ],
           "address": "Enchanted Adventure, 55 Purves Road, Arthurs Seat",
           "website": "https://www.enchantedadventure.com.au/experiences/nippers-tree-surfing/",
-          "tip": "如另选场次，仍以13:00左右离园为目标，给下午跨城开车留余量。"
+          "tip": "活动结束后再玩地面项目，仍以13:00左右离园为目标，给下午跨城开车留余量。"
         },
         {
           "id": "sun-enchanted-park",
@@ -466,16 +483,105 @@
       ]
     }
   ],
+  "costs": {
+    "currency": "AUD",
+    "families": 2,
+    "splitLabel": "两家各50%",
+    "items": [
+      {
+        "id": "stay",
+        "title": "Zulu Villa · 两晚住宿",
+        "amount": 1694,
+        "status": "confirmed",
+        "statusLabel": "已付",
+        "note": "11月1–3日两晚总价，已付清；3大2小入住无额外费用。"
+      },
+      {
+        "id": "enchanted",
+        "title": "Enchanted Adventure · Nippers与入园",
+        "amount": 295,
+        "status": "confirmed",
+        "statusLabel": "已确认票面价",
+        "note": "1成人+2名6岁儿童Nippers、2成人General Admission及3双手套；票面总价两家各A$147.50。"
+      },
+      {
+        "id": "bath",
+        "title": "Hepburn Bathhouse · Mineral Bathing",
+        "amount": 245,
+        "status": "confirmed",
+        "statusLabel": "已确认预约价",
+        "note": "已订3大2小：1份成人票与1份家庭套餐。"
+      },
+      {
+        "id": "sault",
+        "title": "Sault · 周日晚餐",
+        "amount": 550,
+        "status": "estimate",
+        "statusLabel": "预算 · 待实际账单",
+        "note": "按3位成人三道餐及2份儿童套餐估算；酒水、配菜和主菜升级另计，最终按实际账单均分。"
+      },
+      {
+        "id": "lavandula",
+        "title": "Lavandula · 农场入园",
+        "amount": 17,
+        "status": "estimate",
+        "statusLabel": "现场入园预算",
+        "note": "按3位成人及2名6岁儿童当前门票估算，现场购买后按实际金额更新。"
+      },
+      {
+        "id": "wombat",
+        "title": "Wombat Hill House · 周一早餐",
+        "amount": null,
+        "status": "pending",
+        "statusLabel": "待实际账单",
+        "note": "早餐地点仍是建议，若改去Larder，以实际早餐账单均分。"
+      },
+      {
+        "id": "rubens",
+        "title": "Rubens · 周一晚餐",
+        "amount": null,
+        "status": "pending",
+        "statusLabel": "待实际账单",
+        "note": "5人预约已确认，餐费尚未出账，最终按实际账单均分。"
+      },
+      {
+        "id": "cliffy",
+        "title": "Cliffy’s · 周二brunch",
+        "amount": null,
+        "status": "pending",
+        "statusLabel": "待实际账单",
+        "note": "5人预约已确认，餐费尚未出账；当日加收及饮料按实际账单计入。"
+      },
+      {
+        "id": "other",
+        "title": "其他餐饮、停车／路费",
+        "amount": null,
+        "status": "pending",
+        "statusLabel": "待实际账单",
+        "note": "其他餐饮、零食、停车及路费等未列支出，按实际金额补录并均分。"
+      }
+    ],
+    "notes": [
+      "Enchanted按票面总价计账，其他费用按已确认金额或最终实际账单记录；所有费用最终两家各50%。",
+      "已确认金额合计A$2,234，每家A$1,117；加上Sault与Lavandula预算，参考合计A$2,801，每家A$1,400.50。",
+      "参考合计尚未计入Wombat、Rubens、Cliffy’s实际账单，以及额外酒水、加购和路费；待账单项目不是零元。"
+    ]
+  },
   "checklist": [
     {
       "id": "enchanted-booking",
-      "label": "完成Nippers与普通入园购票，并保存确认",
-      "detail": "拟订11月1日10:15：1成人+2名6岁儿童参加Nippers，另2成人普通入园。成人只能协助1名孩子，另1名孩子须自行完成；尚未预约。"
+      "label": "保存Nippers与普通入园确认电子票",
+      "detail": "11月1日10:15 Nippers已确认：1成人+2名6岁儿童，另2成人09:00全日普通入园；3双园区手套已订，09:45前到园。"
+    },
+    {
+      "id": "enchanted-waiver",
+      "label": "出发前由本人及孩子家长或监护人签waiver",
+      "detail": "参加活动的成人本人签署；孩子部分由其家长或监护人签署。成人协助仍为1:1，另1名孩子须能够自行完成。"
     },
     {
       "id": "confirmations",
       "label": "把Tree Surfing、温泉、餐厅和住宿确认放到手机里",
-      "detail": "Tree Surfing尚未预约；保留原邮件／电子票，网页只用于看行程。"
+      "detail": "以上预约均已确认；保留原邮件／电子票，网页只用于看行程。"
     },
     {
       "id": "sault-cutoff",
@@ -518,13 +624,13 @@
       "id": "enchanted-nippers",
       "title": "Enchanted Adventure · Nippers",
       "url": "https://www.enchantedadventure.com.au/experiences/nippers-tree-surfing/",
-      "note": "一小时、6岁儿童自行攀爬、成人协助1:1与当前票面价格。"
+      "note": "一小时、6岁儿童自行攀爬与成人协助1:1；本次11月1日10:15的1成人+2儿童场次依据商家确认。"
     },
     {
       "id": "enchanted-admission",
       "title": "Enchanted Adventure · 普通入园",
       "url": "https://www.enchantedadventure.com.au/experiences/admission/",
-      "note": "Nippers包含普通入园；另两位不攀爬成人的General Admission选项。"
+      "note": "Nippers包含普通入园；另两位成人09:00全日General Admission依据商家确认。"
     },
     {
       "id": "enchanted-faq",
@@ -612,7 +718,7 @@
     }
   ],
   "notes": [
-    "10月14日更新：两个孩子均为6岁。周日小火车已取消，改为上午Enchanted Adventure；拟订10:15的1成人+2儿童Nippers，另2成人普通入园，尚未预约。",
+    "10月14日更新：两个孩子均为6岁。周日小火车已取消；11月1日10:15–11:15的1成人+2儿童Nippers、另2成人09:00全日普通入园及3双园区手套均已获商家确认。",
     "所有时间为墨尔本当地时间。已订项目按本次确认记录；其他具体时刻是建议安排，可按天气和精神调整。",
     "原餐饮、农场与温泉资料核查于2026年10月7日；Tree Surfing资料与跨城路线核查于10月14日，出行前以最新信息为准。",
     "网页不展示私人订单、预订编号或完整确认邮件。"

@@ -6,13 +6,16 @@
 
 ## 维护
 
-- 日程、地址、预约状态、菜单参考、清单与来源统一更新 `trip-data.json`。
+- 日程、地址、预约状态、菜单参考、费用分账、清单与来源统一更新 `trip-data.json`。
 - `confirmed` 表示本次确认的预约；`planned` 表示计划或建议；`optional` 表示可跳过。
-- 周日小火车已取消；上午 Enchanted Adventure Tree Surfing 尚未预约，拟订 10:15 Nippers：1 成人 + 2 儿童，另 2 成人 General Admission。6 岁儿童可自行攀爬；成人协助仍为 1:1，另 1 名孩子须自行完成。收到预约确认前不能标记 `confirmed`。湖边散步改到周二 brunch 之后。
-- 保留准确的预约时间：周日Sault 18:30；周一 Bathhouse 14:00–15:30、Rubens 18:00；周二 Cliffy’s 10:15。
+- 周日小火车已取消；Enchanted Adventure 已获商家确认，11 月 1 日 10:15–11:15 Nippers：1 成人 + 2 名 6 岁儿童，另 2 成人持 09:00 入园时段的全日 General Admission；3 双园区手套已订。预约摘要与活动时间线均标记 `confirmed`，09:45 前到园属于报到要求。
+- 6 岁儿童可自行攀爬；成人协助仍为 1:1，另 1 名孩子须能够自行完成。清单提醒保存确认电子票，出发前由参加活动的成人本人及儿童家长或监护人签 waiver。湖边散步仍安排在周二 brunch 之后。
+- 保留准确的预约时间：周日 Nippers 10:15–11:15、Sault 18:30；周一 Bathhouse 14:00–15:30、Rubens 18:00；周二 Cliffy’s 10:15。
 - Zulu 住宿为 11 月 1–3 日两晚，15:00 起入住、10:00 前退房。入住人数已得到酒店书面确认。
 - 清单仅保存在本机浏览器；打印按钮调用浏览器的打印或保存 PDF 功能。
-- `index.html` 内的无 JavaScript 简版保留核心安排，并明确标示未预约活动；年龄、人数或预约变化时同时核对这份简版。
+- `costs` 按两家各 50% 计算。`confirmed` 为已确认金额，`estimate` 为预算，`pending` 为待实际账单；未知金额使用 `null`，不能当作零元。Enchanted 按票面总价 A$295 均分，两家各 A$147.50。
+- 已确认金额为 Zulu A$1,694、Enchanted A$295、Bathhouse A$245，合计 A$2,234，每家 A$1,117。加上 Sault A$550 与 Lavandula A$17 的预算，参考合计 A$2,801，每家 A$1,400.50；Wombat、Rubens、Cliffy’s 的实际账单及额外酒水、加购与路费尚未计入。预算不能标记为已付。
+- `index.html` 内的无 JavaScript 简版保留核心已订安排、报到时间及成人协助要求；年龄、人数或预约变化时同时核对这份简版。
 - 根目录 `index.html` 与 `index.template.html` 只新增入口链接，旧行程保持原结构。
 
 ## 公开范围

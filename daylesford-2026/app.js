@@ -157,6 +157,81 @@
     $("#bookings-content").replaceChildren(list);
   }
 
+  function renderCosts(costs = {}) {
+    const container = $("#costs-content");
+    if (!container) return;
+    const items = Array.isArray(costs.items) ? costs.items.filter((item) => item && typeof item === "object") : [];
+    if (!items.length) {
+      container.replaceChildren(element("p", "costs-note", "费用记录待补充，最终总额尚未确认。"));
+      return;
+    }
+    const numberFormat = new Intl.NumberFormat("en-AU", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const money = (cents) => cents === null ? "待确认" : `A$${numberFormat.format(cents / 100)}`;
+    const statuses = {
+      confirmed: { label: "已确认", style: "confirmed" },
+      estimate: { label: "预算参考", style: "suggested" },
+      pending: { label: "待确认", style: "optional" }
+    };
+    const rows = items.map((item) => ({
+      item,
+      status: Object.hasOwn(statuses, item.status) ? item.status : "pending",
+      cents: typeof item.amount === "number" && Number.isFinite(item.amount) && item.amount >= 0 ? Math.round(item.amount * 100) : null
+    }));
+    const confirmed = rows.filter((row) => row.status === "confirmed" && row.cents !== null);
+    const estimated = rows.filter((row) => row.status === "estimate" && row.cents !== null);
+    const unresolved = rows.filter((row) => row.status === "pending" || row.cents === null);
+    const subtotal = (entries) => entries.length ? entries.reduce((sum, row) => sum + row.cents, 0) : null;
+    const confirmedTotal = subtotal(confirmed);
+    const referenceTotal = subtotal([...confirmed, ...estimated]);
+    const intro = element("p", "costs-intro", "全部费用由两家各承担50%，不按人数区分。金额以澳元（AUD）显示。");
+    const wrapper = element("div", "cost-table-wrap");
+    wrapper.setAttribute("role", "region");
+    wrapper.setAttribute("aria-label", "费用明细，可左右滑动查看");
+    wrapper.tabIndex = 0;
+    const table = element("table", "cost-table");
+    table.append(element("caption", "", "费用明细 · 两家各50%"));
+    const head = element("thead", "");
+    const headRow = element("tr", "");
+    ["项目", "全家金额", "每家50%", "状态"].forEach((label) => {
+      const cell = element("th", "", label);
+      cell.scope = "col";
+      headRow.append(cell);
+    });
+    head.append(headRow);
+    const body = element("tbody", "");
+    rows.forEach(({ item, status, cents }) => {
+      const row = element("tr", `cost-row cost-${status}`);
+      const title = element("th", "cost-item");
+      title.scope = "row";
+      title.append(element("span", "cost-item-title", item.title || "费用项目"));
+      if (item.note) title.append(element("small", "cost-item-note", item.note));
+      const total = element("td", "cost-amount", money(cents));
+      const share = element("td", "cost-amount", money(cents === null ? null : cents / 2));
+      const state = element("td", "cost-state");
+      state.append(element("span", `status-badge ${statuses[status].style}`, item.statusLabel || statuses[status].label));
+      row.append(title, total, share, state);
+      body.append(row);
+    });
+    table.append(head, body);
+    wrapper.append(table);
+    const summaries = element("div", "cost-summaries");
+    [
+      ["已确认费用", confirmedTotal, "仅合计已确认且有金额的项目。"],
+      ["已确认＋预算参考", referenceTotal, "含估算项目，作为预算参考。"]
+    ].forEach(([label, amount, note], index) => {
+      const card = element("div", `cost-summary${index ? " cost-summary-estimate" : ""}`);
+      card.append(element("h3", "", label), element("strong", "cost-summary-total", money(amount)));
+      card.append(element("p", "cost-summary-share", `每家50% · ${money(amount === null ? null : amount / 2)}`));
+      card.append(element("p", "cost-summary-note", note));
+      summaries.append(card);
+    });
+    const missing = element("p", "costs-note", unresolved.length
+      ? `另有${unresolved.length}项待确认或金额未知，未计入以上小计。最终总额待餐饮账单、酒水与其他附加费、路费等补齐后确认。`
+      : "以上预算参考不等于最终应付；餐饮账单、酒水与其他附加费、路费等仍按实际金额补齐。");
+    container.replaceChildren(intro, wrapper, summaries, missing);
+    appendNotes(container, costs.notes, "costs-note");
+  }
+
   function dayMotif(index) {
     const svg = document.createElementNS(svgNS, "svg");
     svg.setAttribute("viewBox", "0 0 90 50");
@@ -228,7 +303,7 @@
     });
     $("#days-content").replaceChildren(...sections);
     const nav = $(".nav-inner");
-    nav.replaceChildren(...days.map((day, index) => {
+    const navLinks = days.map((day, index) => {
       const id = day.id || `day-${day.date}`;
       const date = dateParts(day.date);
       const anchor = element("a", "day-link");
@@ -237,13 +312,23 @@
       anchor.append(element("span", "", `${date?.day || index + 1} NOV`), element("strong", "", day.navLabel || [day.weekday, day.title].filter(Boolean).join(" · ")));
       anchor.title = [day.dateLabel, day.title].filter(Boolean).join(" · ");
       return anchor;
-    }));
+    });
+    const costsSection = $("#costs");
+    if (costsSection) {
+      const anchor = element("a", "day-link costs-link");
+      anchor.href = "#costs";
+      anchor.dataset.dayLink = "costs";
+      anchor.append(element("span", "", "50 / 50"), element("strong", "", "费用分账"));
+      navLinks.push(anchor);
+      sections.push(costsSection);
+    }
+    nav.replaceChildren(...navLinks);
     installDayNavigation(sections);
   }
 
   function markActiveDay(id) {
     document.querySelectorAll("[data-day-link]").forEach((anchor) => {
-      if (anchor.dataset.dayLink === id) anchor.setAttribute("aria-current", "date");
+      if (anchor.dataset.dayLink === id) anchor.setAttribute("aria-current", id === "costs" ? "location" : "date");
       else anchor.removeAttribute("aria-current");
     });
   }
@@ -347,6 +432,7 @@
       renderStay(data.stay);
       renderBookings(data.bookings || []);
       renderDays(data.days || []);
+      renderCosts(data.costs || {});
       renderChecklist(data.checklist || []);
       renderSources(data.sources || [], data.notes || []);
       $("#load-notice").textContent = "";
