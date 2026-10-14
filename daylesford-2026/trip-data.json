@@ -6,7 +6,7 @@
     "startDate": "2026-11-01",
     "endDate": "2026-11-03",
     "dateLabel": "2026年11月1日—3日 · 周日至周二",
-    "group": "两家人 · 3位大人 + 2位5岁孩子",
+    "group": "两家人 · 3位大人 + 2位6岁孩子",
     "timezone": "Australia/Melbourne · 当地夏令时 AEDT",
     "updatedAt": "2026-10-14",
     "intro": [
@@ -25,7 +25,7 @@
       },
       {
         "value": "5人",
-        "label": "3大人 · 2个5岁孩子"
+        "label": "3大人 · 2个6岁孩子"
       }
     ]
   },
@@ -163,14 +163,15 @@
         {
           "id": "sun-tree-surfing",
           "time": "建议10:15—11:15",
-          "title": "Tree Surfing Nippers · 两个孩子分别由成人陪同",
+          "title": "Tree Surfing Nippers · 1成人 + 2儿童",
           "status": "planned",
           "statusLabel": "已选活动 · 未预约",
-          "summary": "Nippers一小时；两个5岁孩子各需一位成人上树陪同，1:1。",
+          "summary": "Nippers一小时；两个孩子都是6岁，可自行攀爬。本次拟安排1位成人与2位孩子参加。",
           "details": [
-            "两名儿童与两名陪同成人都需要Nippers票；陪同者只买普通入园票不够。",
-            "Nippers票已含普通入园；第3位成人若不攀爬，可买General Admission。",
-            "当前票面参考：儿童A$64×2、陪同成人A$74×2、普通成人入园A$42，合计A$318；手套和线上附费以结算为准。",
+            "拟购票组合：1位成人与2位儿童的Nippers票，另2位成人买General Admission，在地面活动。",
+            "6岁孩子可自行完成Nippers；若需要成人协助，仍按1成人协助1儿童。本次只有1位成人上树，另一个孩子须能够自行完成。",
+            "Nippers票已含普通入园；两位不攀爬成人只需General Admission。",
+            "当前票面参考：儿童A$64×2、成人Nippers A$74、普通成人入园A$42×2；攀爬者须戴手套，园区手套A$3／双，线上附费以结算为准。",
             "10月14日查询时，11月1日10:15有可选名额；此处是建议场次，尚未预订。"
           ],
           "address": "Enchanted Adventure, 55 Purves Road, Arthurs Seat",
@@ -468,8 +469,8 @@
   "checklist": [
     {
       "id": "enchanted-booking",
-      "label": "提前预订Nippers场次，并核对原credit voucher",
-      "detail": "两个5岁孩子各需一位成人上树陪同；券码和私人兑换链接在原邮件查看。"
+      "label": "完成Nippers与普通入园购票，并保存确认",
+      "detail": "拟订11月1日10:15：1成人+2名6岁儿童参加Nippers，另2成人普通入园。成人只能协助1名孩子，另1名孩子须自行完成；尚未预约。"
     },
     {
       "id": "confirmations",
@@ -517,13 +518,13 @@
       "id": "enchanted-nippers",
       "title": "Enchanted Adventure · Nippers",
       "url": "https://www.enchantedadventure.com.au/experiences/nippers-tree-surfing/",
-      "note": "一小时、4–5岁成人1:1陪同与当前票面价格。"
+      "note": "一小时、6岁儿童自行攀爬、成人协助1:1与当前票面价格。"
     },
     {
       "id": "enchanted-admission",
       "title": "Enchanted Adventure · 普通入园",
       "url": "https://www.enchantedadventure.com.au/experiences/admission/",
-      "note": "Nippers包含普通入园；第三成人不攀爬时的入园选项。"
+      "note": "Nippers包含普通入园；另两位不攀爬成人的General Admission选项。"
     },
     {
       "id": "enchanted-faq",
@@ -611,7 +612,7 @@
     }
   ],
   "notes": [
-    "10月14日更新：周日小火车已取消，改为上午Enchanted Adventure；Tree Surfing尚未预约，建议时间不代表已订。",
+    "10月14日更新：两个孩子均为6岁。周日小火车已取消，改为上午Enchanted Adventure；拟订10:15的1成人+2儿童Nippers，另2成人普通入园，尚未预约。",
     "所有时间为墨尔本当地时间。已订项目按本次确认记录；其他具体时刻是建议安排，可按天气和精神调整。",
     "原餐饮、农场与温泉资料核查于2026年10月7日；Tree Surfing资料与跨城路线核查于10月14日，出行前以最新信息为准。",
     "网页不展示私人订单、预订编号或完整确认邮件。"
