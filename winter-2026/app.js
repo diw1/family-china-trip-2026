@@ -1,80 +1,96 @@
-// 2026-10-16：按已出票记录摘录可展示信息；座位、邮件链接和订单标识仅保留在 private/。
-const confirmedFlights = [
-  ['CZ344 · 中国南方航空', '12.10 周四 23:25<br>墨尔本 MEL T2', '12.11 周五 06:00<br>广州 CAN T2', '超级经济舱<br>9小时35分', 'A350-900', '托运2×23kg；随身1×8kg，另一个座椅下小件'],
-  ['HX237 · 香港航空', '01.16 周六 12:25<br>上海浦东 PVG T2', '01.16 周六 15:30<br>香港 HKG T1', '商务舱<br>3小时5分', 'A320', '托运2×32kg；1件手提＋1件小件，合计15kg'],
-  ['HX035 · 香港航空', '01.18 周一 22:35<br>香港 HKG T2（订单列示）', '01.19 周二 11:30<br>墨尔本 MEL T2', '商务舱<br>9小时55分', 'A330', '托运2×32kg；1件手提＋1件小件，合计15kg']
-];
-const data = {
-  couple: {
-    title: '两个人的首尔，逛街也留白。',
-    intro: '把时间给咖啡、美术馆、好好吃饭和适量购物。无需安排儿童项目，累了就回酒店。',
-    note: '首尔已订：12月22–24日龙山美爵Junior Suite大床两晚，Stay Plus已计入，含税₩452,100到店应付；12月24–27日L’Escape Corner Junior King Suite城市景观大床套房三晚，含两位成人早餐，含税₩2,393,600。两位成人、不带孩子；五晚含税房费合计₩2,845,700，不代表已支付。美爵成人早餐未列，具体取消时刻待核；L’Escape由酒店收款，韩国时间12/23 23:59前免费取消。24日换一次酒店，提前入住未获保证。孩子在大连的照顾安排另落实；旧酒店比价见历史参考。',
-    days: [
-      ['到达 · 安顿下来', '大连飞首尔，按实际抵达机场安排接送，入住已订龙山美爵Junior Suite大床房。入住后只在酒店周边吃晚饭，早点休息。', '美爵15:00起入住，成人早餐权益待核；接送按实际航班机场落实。'],
-      ['景福宫周边 · 西村', '上午短逛宫殿或光化门周边，下午西村咖啡与小店。当天只围绕一个片区。', '此日为周三；宫殿开放时间和预约临近核对。'],
-      ['汉南洞 · Leeum', '美术馆＋汉南洞小店，晚餐选一家想认真吃的餐厅。展览和餐位提前核对。', '平安夜当天换酒店：美爵11:00前退房，前往已订L’Escape Corner套房，询问行李寄存后再安排活动。正常15:00起入住；12:00–13:00提前入住申请未获保证，晚餐与展馆预约待落实。'],
-      ['圣诞慢日 · 酒店与晚餐', '睡到自然醒，酒店早餐、休息或自费 SPA；傍晚短逛明洞及百货周边。', '已在L’Escape Corner套房连住，无需换酒店；早餐包含。25–27日人流可能集中，SPA与餐饮可约情况待查。'],
-      ['圣水洞 · 咖啡与设计小店', '晚出门，选两三家店慢逛；不为打卡横穿全城。冷了就进咖啡馆。', '周末热门店会排队；如人多，换酒店周边购物或休息。'],
-      ['首尔 → 大连', '在L’Escape吃已含早餐，11:00前退房；按实际机票前往机场、飞回大连。到达后以休息和交接孩子为主。', '韩国比中国快一小时；以机票上的当地时间为准。']
-    ],
-    hotels: [
-      ['首选 · 氛围与位置', 'L’Escape 莱斯盖普', 'Luxury Collection · 明洞／会贤', '巴黎复古风格，适合两人吃饭、逛街、回酒店休息。32㎡ Amour 大床房五晚约 A$2,921，不含早，预算内；53㎡ Atelier 小套房含早约 A$3,617，属于超预算升级。', '已在本次日期的订房页核对房型、双人入住、含税价及取消政策。套房列有浴缸与酒廊使用权，具体餐饮权益待酒店确认；不把 SPA 当作天然温泉。', 'https://www.marriott.com/en-us/hotels/sellm-lescape-a-luxury-collection-hotel-seoul-myeongdong/overview/'],
-      ['预算内 · 含早与设计', 'Mondrian 首尔梨泰院', 'Mondrian Seoul Itaewon · 梨泰院', '设计感强，适合汉南洞、梨泰院餐饮与酒店休息。23㎡ Signature King 五晚可取消无早约 A$2,593；双人含早约 A$2,891，平均 A$578／晚，符合原预算。', '客房较小；官网列地铁站步行约 15 分钟，冬季更依赖打车。室内泳池可用，官网 2026 户外泳池营业季为 5/23–9/27，不把户外池列入十二月体验。', 'https://all.accor.com/hotel/B771/index.en.shtml'],
-      ['超预算 · 汉江景观', 'Hotel Naru 美憬阁', 'Hotel Naru Seoul – MGallery Collection · 麻浦', '推荐按 38㎡ Deluxe River King 核价，带浴缸、看汉江；有全年室内泳池。可取消无早五晚约 A$3,577，平均 A$715／晚；含双人早餐约 A$4,161。', '低价无景房不能代表河景体验：37㎡低楼层无景无障碍房可取消约 A$3,168。河景可取消价列 12/21 18:00 前免费取消、12/19 前零付款；实际扣款与担保下单核对。', 'https://mgallery.accor.com/en/hotels/B5E0.html'],
-      ['备选 · 市中心与泳池', '首尔威斯汀朝鲜酒店', 'The Westin Josun Seoul · 市厅／明洞', '经典酒店，适合重视市中心位置、室内泳池和完整酒店设施。36㎡ Deluxe 大床房五晚约 A$3,508，不含早；双人含早方案约 A$4,000。', '约 A$702／晚已超过原预算。基础房桑拿另收费；泳池每日有维护时段，节假日可能限制每日进入次数。', 'https://www.marriott.com/en-us/hotels/selwi-the-westin-josun-seoul/overview/'],
-      ['备选 · 实用与泳池', '东大门诺富特酒店', 'Novotel Ambassador Seoul Dongdaemun', '23㎡标准大床房，可取消、不含早五晚约 A$2,975；含早可取消约 A$3,384。靠近东大门，适合偏重逛城、用酒店室内泳池的安排。', '房间较小；低价 A$2,826 是不可退款方案，不能与可取消价格混比。房型描述中的泳池指酒店设施，不是客房私泳池；冬季不依赖屋顶设施。', 'https://all.accor.com/hotel/A5U6/index.en.shtml']
-    ]
-  },
-  tasks: [
-    ['passport-documents','已知身份 · 核对文件','孩子七岁且已有中国签证；中国护照持有人为澳洲 PR。核对 PR／RRV 文件、在澳居住证明，返澳资格与旅行保险按已出票的2027年1月19日抵澳日期检查。'],
-    ['child-visa-care','现有签证 · 行前核对','核对孩子中国签证的每次停留期；两位成人去首尔及之后赴上海期间，落实孩子在大连的照顾安排。孩子计划1/16早上独自从大连直飞上海浦东，与父母会合；国内票与无成人陪伴服务尚未核实已订。'],
-    ['appointment','已预约','韩国签证递交时段已预约；以私人确认邮件为准。'],
-    ['documents','材料基本齐备','其余材料已准备，近三个月澳洲银行流水留到递交前一周补齐；提醒已设置。'],
-    ['submission','按已约时段递交','携完整材料现场递交韩国签证，并支付适用费用。'],
-    ['visa-result','12 月出发前','确认韩国签证获批，打印签证结果；检查返澳 travel facility、护照有效期及旅行保险。'],
-    ['dates','去程与回程已出票','12/10 23:25南航CZ344从墨尔本出发，12/11 06:00抵广州；1/16港航HX237从上海浦东赴香港，1/18 HX035离港，1/19 11:30抵墨尔本。均两成人＋一名七岁儿童；首尔仍为12/22–27、仅两成人，韩国往返机票尚未核实已订。'],
-    ['transport-changsha','其余交通待落实 · 不再查已购机票','长沙到达日期已确定：12/15两成人＋七岁孩子高铁从广州到长沙，车票待购；父亲带孩子12/17或18回大连，太太12/20单独回大连，返程方式与班次待定。上述交通及大连–首尔往返、大连–上海尚未核实已订。两位成人1/3抵达上海已确定，抵沪交通尚未核实出票，具体酒店及每家入住晚数待定；孩子改为1/16早上大连→浦东，申请无成人陪伴服务后由父母在机场接回，国内航班及服务待落实；已购南航去程与港航回程不再比价，不把旧询价当实付。'],
-    ['changsha-highspeed-ticket','12/1起关注 · 12/15广州→长沙高铁待购','12/15出发日期已确定，车票尚未购买。按当前12306含当天15天预售规则，预计12/1起售；具体出发站、车次与起售时刻待选，临近通过12306复核。这是购票待办，未设置自动提醒。'],
-    ['hongkong-hotel','1/16–18 · Mondrian两晚已订、到店支付','10/19确认邮件已核实Premier Skyline King，两成人＋一名儿童，Stay Plus已计入，含税HK$3,031.22全部到店支付；香港时间1/14 15:00前免费取消，三人价不含加床，邮件未列早餐。16日晚跑手本人先办理Mondrian入住，再独住富豪九龙；17日06:25全马后加入Mondrian，18日12:00前退房。首晚分住仍待酒店单独确认；富豪确认号、领物衔接待落实。'],
-    ['guangzhou-hotel-confirmed','12/11–15 · 广州沙园亚朵已订四晚','用户10/20确认已订广州海珠沙园地铁站亚朵酒店，12/11入住、12/15退房，共四晚；广州同行为两成人＋七岁儿童。房型、订单登记人数、早餐、总价、付款和取消条款尚未提供，入住前按确认单核对。15日退房后高铁赴长沙，车票待购。'],
-    ['hotels-changsha','长沙只看亚朵 · 两晚或三晚，尚未预订','12/15入住、17或18退房，两成人＋七岁儿童同住一间；太太后段跟朋友住，不再预算五晚。候选碧沙湖亚朵、苏家巷IFS五一广场亚朵S、培元桥江景亚朵S。指定日期两晚／三晚酒店级搜索总价：碧沙湖¥2,112／¥3,168；苏家巷¥2,289.60／¥3,434.40；培元桥未取得准确门店报价。按含早可取消筛选，但具体房型、儿童早餐、全部费用与取消时刻待核，不能套用到45㎡家庭房或行政双床。'],
-    ['seoul-hotels-confirmed','12/22–27 · 两家已订，入住前复核权益','美爵12/22–24 Junior Suite大床两晚含税₩452,100到店应付，Stay Plus已计入；L’Escape12/24–27 Corner城市景套房三晚含双早、含税₩2,393,600，酒店负责收款。合计₩2,845,700不代表已支付。待核美爵成人早餐与精确取消时刻；L’Escape韩国时间12/23 23:59前免费取消，之后₩804,100，提前入住申请未获保证。'],
-    ['child-pudong-um','1/16早上 · 用户拟选CA8953，尚未订','七岁孩子拟乘国航CA8953方向，冬季周六参考07:50→09:55浦东T2；国航官网1/16查询未返回航班，实际班次及无陪名额待95583确认。大连航空现行条件支持符合年龄者事先申请无陪、受名额限制；须核实际承运方、护照、儿童价、送机亲属授权与交接安排。若09:55到达，至港航11:35停止值机仅1小时40分，衔接偏紧，未确认可行、未出票。'],
-    ['shanghai-hotel','1月上旬 · 浦东亚朵待选','住宿优先浦东高科西路一带，暂看上海新国际博览中心杨高南路地铁站亚朵酒店（华绣路356号）。上海住宿先按两位成人筛选，孩子计划1/16才到浦东机场会合、不计入此前上海酒店。1/3抵达上海已确定；待确认具体门店、退房日及是否分住后，再查含早可取消房型及总价；不默认1/3–16全程连住，尚未预订。'],
-    ['changsha-running-weather','长沙亚朵与江边跑步 · 临行看天气','三家亚朵中按位置优先看碧沙湖，步行接湘江东岸步道后沿江往返；苏家巷和培元桥需先走市区道路到江边。5–8公里仅为路线构想，具体入口、过街与当期施工未实测。12月历史气候平均低温约4℃、高温约11℃，不是本次日期预报；江风和阴雨影响体感，临行再看预报，雨天核门店健身房。'],
-    ['activities-changsha','出发前','长沙亲子活动集中在15–17日三人同游期间，核对欢乐雪域身高与陪同规则、科技馆改造和地质馆预约，门票先按两成人＋七岁儿童核价，返程日按实际在场人数；核对首尔开放日、餐厅与美术馆预约、泳池维护；2026 圣诞活动正式公布后再加入。'],
-    ['arrival','抵韩前 3 日内','按每人资格填写免费的 e-Arrival Card，复核回大连及回澳洲所需文件。']
-  ]
+'use strict';
+
+// Public pages contain no private identifiers. Old bookmarks continue to work.
+const legacySections = {
+  route:'index.html#route', overview:'index.html#route',
+  hotels:'bookings.html#hotels', 'selected-stay':'bookings.html#selected-stay',
+  'guangzhou-hotels':'bookings.html#guangzhou-hotels',
+  'hongkong-hotels':'bookings.html#hongkong-hotels',
+  'hongkong-marathon':'bookings.html#hongkong-marathon',
+  'confirmed-flights':'bookings.html#confirmed-flights',
+  'confirmed-dates':'bookings.html#confirmed-dates',
+  'confirmed-flight-rows':'bookings.html#confirmed-flights',
+  'seoul-confirmed-booking-rows':'bookings.html#selected-stay',
+  'changsha-hotels':'planning.html#changsha-hotels',
+  'changsha-running-weather':'planning.html#changsha-running-weather',
+  'shanghai-hotels':'planning.html#shanghai-hotels',
+  'pudong-reunion':'planning.html#pudong-reunion',
+  tasks:'planning.html#tasks', checklist:'planning.html#tasks',
+  changsha:'planning.html#changsha', seoul:'planning.html#seoul',
+  'seoul-photos':'planning.html#seoul-photos', 'hongkong-dining':'planning.html#hongkong-dining',
+  visa:'planning.html#visa', alternatives:'research.html#alternatives', sources:'research.html#sources',
+  'seoul-research-history':'research.html#seoul-research-history',
+  'selected-stay-quote-history':'research.html#selected-stay-quote-history',
+  'lescape-photos':'research.html#lescape-photos', 'room-photo-cards':'research.html#room-photo-cards',
+  'reverse-stayplus':'research.html#reverse-stayplus', 'hotel-cards':'research.html#hotel-cards',
+  'accor-offer':'research.html#accor-offer', 'split-stay':'research.html#split-stay',
+  'budget-3500':'research.html#budget-3500', 'seoul-more-hotels':'research.html#seoul-more-hotels',
+  'seoul-reviews':'research.html#seoul-reviews', 'amex-fhr':'research.html#amex-fhr',
+  'seoul-running':'research.html#seoul-running'
 };
-const party='couple', depart=22;
-const $=s=>document.querySelector(s);
-const dateLabel=n=>{const d=new Date(Date.UTC(2026,11,n));return `12.${String(n).padStart(2,'0')} 周${'日一二三四五六'[d.getUTCDay()]}`};
-function render(){
-  const d=data[party], back=depart+5;
-  const legs=[
-    ['12.10 — 11','墨尔本 → 广州','已出票：南航CZ344，12/10周四23:25从MEL T2出发，12/11周五06:00抵CAN T2；超级经济舱，9小时35分。两成人＋七岁儿童；抵达日只安排休息与用餐。','已出票 · 南航CZ344'],
-    ['12.11 — 15','广州 · 沙园亚朵四晚已订','用户确认已订广州海珠沙园地铁站亚朵酒店，12月11日入住、15日退房，共四晚。广州为一家三口同行；具体房型、早餐、价格、付款与取消条款待按订单补充。','用户确认已订 · 12/11–15四晚'],
-    ['12.15','广州 → 长沙高铁衔接','15日从沙园亚朵退房后，一家三口坐高铁去长沙；具体车次、车站和时刻待定，尚未出票。','日期已定 · 高铁待购'],
-    ['12.15 — 20','长沙 · 三人同游后分开返程','一家三口15日高铁到达日期已定、一起玩到17日；你与七岁孩子17日或18日回大连，太太之后去和朋友住，20日独自回大连。酒店仅查15–17日两晚或15–18日三晚，不安排后段住宿；长沙交通与酒店未订，父子返程日期保留两个选项。','15日到达已定 · 分段返程'],
-    [`12.17或18起 — ${depart}`,'大连 · 分批到达后会合','你带孩子预计17日或18日先回大连，太太20日独自回大连；22日两位成人赴首尔，孩子的大连照顾与交接另落实。长沙返程方式、班次与首尔往返机票尚未核实已订。','最新预计 · 22日首尔不变'],
-    [`12.${depart} — ${back}`,'首尔 · 5 晚 · 两家已订','两位成人、不带孩子。12/22–24龙山美爵Junior Suite大床两晚，12/24–27 L’Escape Corner城市景观套房三晚含双早；24日换酒店。五晚含税订单合计₩2,845,700，不代表已支付；孩子在大连的照顾安排另落实。','两家已订 · 10/20邮件核实'],
-    [`12.${back} — 01.03`,'大连 · 第二段','从首尔回大连，跨年并休息；两位成人已确定1月3日抵达上海，交通班次尚未核实出票。孩子计划继续留大连至1月16日，照顾与送机人安排另落实。','1月3日抵沪已定 · 交通待落实'],
-    ['01.03 — 16','上海 · 1月3日抵达已定','两位成人已确定1月3日抵达上海，交通班次尚未核实出票；具体酒店及每家住宿晚数待定。孩子计划留大连，1/16早上再飞浦东机场会合，上海酒店先按两位成人筛选。1月上旬优先住浦东高科西路一带亚朵，先看华绣路的杨高南路地铁站亚朵，具体门店、各家入住和退房日及晚数待确认，尚未预订。已出票1月16日12:25从上海浦东PVG T2离境。','抵沪日期已定 · 酒店待订'],
-    ['01.16早上','孩子大连 → 上海浦东会合','用户计划：七岁孩子从大连直飞浦东，使用无成人陪伴服务；父母在航司指定地点完成接领，再一起办理香港段手续。用户改选国航CA8953方向，冬季周六参考07:50→09:55浦东T2；国航官网当日查询未返回航班，实际时刻、承运方无陪名额与接领衔接待核，尚未预订；不选择虹桥到达。','新增计划 · 国内航班与无陪待落实'],
-    ['01.16','上海浦东 → 香港','已出票：港航HX237，12:25从PVG T2出发，15:30抵HKG T1；商务舱，3小时5分，两成人＋七岁儿童。','已出票 · 港航HX237'],
-    ['01.16 — 18','香港 · 2 晚','1/16 15:30抵港、1/18 22:35离港，前后航班间55小时5分。16日晚跑手独住富豪九龙，太太孩子住Mondrian；17日06:25参加全马Run 1，跑完后加入Mondrian，一家三口同住第二晚。Mondrian两晚已订Premier Skyline King，含税HK$3,031.22到店支付；首晚分住具体安排及领物衔接仍待确认。','马拉松已确认 · Mondrian两晚已订'],
-    ['01.18 — 19','香港 → 墨尔本','已出票：港航HX035，1/18周一22:35从HKG出发，1/19周二11:30抵MEL T2；商务舱，9小时55分。订单列香港出发T2，临行复核航站楼。','已出票 · 港航HX035']
-  ];
-  $('#route').innerHTML=legs.map((x,i)=>`<article class="route-row"><div class="route-date">${x[0]}</div><span class="dot">${i+1}</span><div><span class="mini">${x[3]}</span><h3>${x[1]}</h3><p>${x[2]}</p></div></article>`).join('');
-  $('#confirmed-flight-rows').innerHTML=confirmedFlights.map(x=>`<tr><th scope="row">已出票<br>${x[0]}</th>${x.slice(1).map(v=>`<td>${v}</td>`).join('')}</tr>`).join('');
-  $('#seoul-title').textContent=d.title;$('#seoul-intro').textContent=d.intro;$('#party-note').textContent=d.note;
-  $('#seoul-dates').textContent=`${dateLabel(depart)} → ${dateLabel(back)}`;
-  $('#days').innerHTML=d.days.map((x,i)=>`<article class="day"><div class="day-date"><small>DAY 0${i+1}</small><b>${dateLabel(depart+i)}</b></div><div><h3>${x[0]}</h3><p>${x[1]}</p><p class="small">${x[2]}</p></div></article>`).join('');
-  $('#hotel-cards').innerHTML=d.hotels.map(x=>`<article class="hotel"><span class="pill">${x[0]}</span><h3>${x[1]}</h3><p class="latin">${x[2]}</p><p>${x[3]}</p><p class="small">${x[4]}</p><a href="${x[5]}" target="_blank" rel="noopener">官网与房型 ↗</a></article>`).join('');
-  const q=new URLSearchParams({party,date:String(depart)});history.replaceState(null,'',`${location.pathname}?${q}${location.hash}`);
+function revealAnchor() {
+  let id;
+  try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+  if (!id) return;
+  const target = document.getElementById(id);
+  if (!target) {
+    if (legacySections[id]) {
+      const url = new URL(legacySections[id], location.href);
+      if (url.pathname !== location.pathname || url.hash !== location.hash) location.replace(url.href);
+    }
+    return;
+  }
+  let node = target;
+  let expanded = false;
+  while (node && node !== document.body) {
+    if (node.tagName === 'DETAILS' && !node.open) { node.open = true; expanded = true; }
+    node = node.parentElement;
+  }
+  if (expanded) requestAnimationFrame(() => target.scrollIntoView({block:'start'}));
 }
-let checked={};try{checked=JSON.parse(localStorage.getItem('winter-2026-tasks')||'{}')}catch{}
-$('#checklist').innerHTML=data.tasks.map(([id,time,label])=>`<label class="task"><input type="checkbox" data-task="${id}" ${checked[id]?'checked':''}><span><small>${time}</small>${label}</span></label>`).join('');
-function progress(){const count=document.querySelectorAll('[data-task]:checked').length;$('#progress').textContent=`本机已勾选 ${count} / ${data.tasks.length} 项`}
-document.querySelectorAll('[data-task]').forEach(el=>el.addEventListener('change',()=>{checked[el.dataset.task]=el.checked;try{localStorage.setItem('winter-2026-tasks',JSON.stringify(checked))}catch{}progress()}));
-$('#print').addEventListener('click',()=>window.print());render();progress();
+window.addEventListener('hashchange', revealAnchor);
+revealAnchor();
+
+// Preserve previous local checklist IDs; a checkbox never implies a booking.
+const storageKey = 'winter-2026-tasks';
+let checked = {};
+try {
+  const saved = JSON.parse(localStorage.getItem(storageKey) || '{}');
+  if (saved && typeof saved === 'object' && !Array.isArray(saved)) checked = saved;
+} catch { /* Usable when storage is unavailable. */ }
+const taskInputs = [...document.querySelectorAll('[data-task]')];
+const hideCompleted = document.getElementById('hide-completed');
+function updateTasks() {
+  let count = 0;
+  taskInputs.forEach(input => {
+    const done = input.checked;
+    if (done) count++;
+    const row = input.closest('.task-row');
+    row.classList.toggle('is-complete', done);
+    row.hidden = Boolean(hideCompleted?.checked && done);
+  });
+  const progress = document.getElementById('progress');
+  if (progress) progress.textContent = `本机已完成 ${count} / ${taskInputs.length} 项`;
+  const empty = document.getElementById('tasks-empty');
+  if (empty) empty.hidden = !(hideCompleted?.checked && count === taskInputs.length);
+}
+taskInputs.forEach(input => {
+  input.checked = checked[input.dataset.task] === true;
+  input.addEventListener('change', () => {
+    checked[input.dataset.task] = input.checked;
+    try { localStorage.setItem(storageKey, JSON.stringify(checked)); } catch { /* Local only. */ }
+    updateTasks();
+  });
+});
+hideCompleted?.addEventListener('change', updateTasks);
+updateTasks();
+let printClosed = [];
+window.addEventListener('beforeprint', () => {
+  printClosed = [...document.querySelectorAll('details:not([open])')];
+  printClosed.forEach(item => { item.open = true; });
+});
+window.addEventListener('afterprint', () => {
+  printClosed.forEach(item => { item.open = false; });
+  printClosed = [];
+});
+document.getElementById('print')?.addEventListener('click', () => window.print());
