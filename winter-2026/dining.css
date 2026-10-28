@@ -1,0 +1,31 @@
+/* Restaurant shortlist: inherits the winter itinerary visual system. */
+body[data-page=dining] .page-intro{max-width:860px}
+body[data-page=dining] .planning-banner{margin-bottom:8px}
+.dining-hotel{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:18px 21px;background:#eaf0e5;border:1px solid #d5dfce;border-radius:12px}
+.dining-hotel p{flex:1;min-width:240px;margin:0;font-size:12px;color:#56665a}
+.dining-hotel>a{font-size:11px}
+.dining-intro{font-size:13px;color:var(--muted);margin:18px 0 8px}
+.dining-priority{font-size:13px;color:var(--ink);margin:0 0 22px}
+.dining-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+.dining-card{border:1px solid var(--line);border-radius:14px;background:#fff;padding:25px;min-width:0;scroll-margin-top:90px}
+.dining-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px;flex-wrap:wrap}
+.dining-category{color:#98633c;font-size:10px;letter-spacing:1px;font-weight:650}
+.dining-tier{font-size:10px;background:#f3f3ec;padding:3px 8px;border-radius:4px;color:#637264}
+.dining-card h3{font:600 22px/1.5 var(--serif);margin-bottom:7px}
+.dining-local{font-size:12px;color:#68796d;margin:0 0 8px}
+.dining-area{font-size:11px;color:#8b7256;margin-bottom:16px}
+.dining-dishes{font-size:13px;min-height:46px}.dining-dishes b{margin-right:8px;color:var(--ink)}
+.dining-budget{padding:13px 0;border-top:1px solid #ecede6;border-bottom:1px solid #ecede6;margin:15px 0}
+.dining-budget strong{display:block;color:var(--ink);font-size:19px;line-height:1.7}
+.dining-budget small{display:block;font-size:10px;color:var(--muted)}
+.dining-access{font-size:12px;color:#647367;margin:13px 0}
+.dining-details{border-top:1px solid #ecede6;margin:16px 0 14px}
+.dining-details>summary{padding:13px 0;font-size:12px;color:var(--ink)}
+.dining-details dl{display:grid;grid-template-columns:70px minmax(0,1fr);gap:10px;font-size:12px;margin:4px 0 18px}
+.dining-details dt{color:#8a745a}.dining-details dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.dining-sources{font-size:10px;line-height:2.2;overflow-wrap:anywhere}
+.dining-map{display:inline-block;font-size:11px;text-decoration:none;background:#edf2e8;border:1px solid #d6dfce;padding:7px 12px;border-radius:6px}
+.dining-notes p{font-size:12px;color:var(--muted)}
+@media(max-width:1100px){.dining-card{padding:22px}.dining-card h3{font-size:20px}}
+@media(max-width:650px){.dining-grid{grid-template-columns:1fr;gap:16px}.dining-card{padding:21px}.dining-card h3{font-size:20px}.dining-hotel{display:block;padding:16px}.dining-hotel p{min-width:0;margin:10px 0}.dining-dishes{min-height:0}.dining-budget strong{font-size:18px}.dining-details dl{grid-template-columns:58px minmax(0,1fr);gap:8px}.dining-card{scroll-margin-top:140px}}
+@media print{.dining-grid{display:block}.dining-card{break-inside:avoid;margin:0 0 16px;padding:16px}.dining-map{display:none}.dining-details dl{font-size:10px}.dining-card h3{font-size:18px}.dining-budget strong{font-size:15px}.dining-sources{font-size:9px}.dining-hotel{padding:12px}.dining-card-top{margin-bottom:10px}}

@@ -1,0 +1,609 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-28",
+  "status": "researched_not_reserved",
+  "title": "广州 · 长沙 · 首尔，附近吃什么",
+  "currency_note": "中国餐费为人民币。韩国按本轮参考汇率 ₩1＝¥0.004974（约₩10,000＝¥50）粗算，非刷卡结算价；套餐酒水、加点与节日专价另核。",
+  "fx_source": {
+    "label": "Wise KRW/CNY参考汇率",
+    "url": "https://wise.com/gb/currency-converter/krw-to-cny-rate"
+  },
+  "travel_note": "以下步行／车程按街区和公开地址估算，未经门到门导航实测；交通、排队与12月营业时段临行复核。所有餐厅均为备选，未联系、未订座。",
+  "cities": [
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "period": "12月11–15日 · 一家三口",
+      "base": "已订：广州海珠沙园地铁站亚朵酒店",
+      "base_address": "海珠区金沙路9号",
+      "base_status": "酒店已订",
+      "hotel_source": {
+        "label": "酒店位置",
+        "url": "https://hotels.ctrip.com/hotels/129347100.html"
+      },
+      "intro": "酒店附近留两家灵活备选；早茶、烧味和啫煲分别选一家，甜品结合西关半日游。",
+      "priority": "优先安排陶陶居早茶和惠食佳啫煲；南信与陶陶居同街顺路，不必每家都跑。",
+      "restaurants": [
+        {
+          "id": "gz-dimsum",
+          "category": "粤式早茶",
+          "name": "陶陶居酒家（第十甫路总店）",
+          "local_name": "",
+          "area": "上下九 · 西关",
+          "tier": "优先安排",
+          "address": "荔湾区第十甫路20号",
+          "signatures": [
+            "虾饺、烧卖",
+            "糯米鸡、奶黄包"
+          ],
+          "budget": "¥90–130／成人",
+          "budget_basis": "规划预算；携程该店人均参考¥103，按点心数量增减。",
+          "access": "从沙园亚朵打车约20–35分钟；适合与上下九、沙面游览结合。",
+          "evidence": "品牌官方仍列这家总店；有老字号早茶特色及平台店级评价，携程列儿童椅。",
+          "notes": "适合带孩子。建议错峰喝早茶；品牌官网与平台资料仍列店，但另有旧页面标暂停营业，12月临行再次确认。",
+          "hours": "平台参考08:00–16:30、17:00–21:30；实际时段待临行核。",
+          "sources": [
+            {
+              "label": "陶陶居官方门店目录",
+              "url": "https://www.taotaoju1880.com/zoujintaotaoju/taotaojumendian"
+            },
+            {
+              "label": "总店资料与人均",
+              "url": "https://gs.ctrip.com/html5/you/foods/fooddetail/554/444058.html"
+            }
+          ]
+        },
+        {
+          "id": "gz-roast",
+          "category": "广式烧腊",
+          "name": "炳胜品味（海印总店）",
+          "local_name": "",
+          "area": "海印桥 · 东晓路",
+          "tier": "想吃烧味时选",
+          "address": "海珠区东晓路33号",
+          "signatures": [
+            "黑叉烧或烧味拼盘",
+            "三味豆腐、青菜"
+          ],
+          "budget": "¥150–220／成人",
+          "budget_basis": "规划预算；两个平台该店人均约¥129–194，海鲜与加点另计。",
+          "access": "从沙园亚朵打车约20–30分钟；本店稍远，适合专门吃一餐烧味。",
+          "evidence": "品牌官网与米其林均有对应东晓路分店资料；不套用炳胜公馆的星级。",
+          "notes": "有家庭用餐信息。两大一小先点一份烧味配豆腐和蔬菜，避免重复点太多肉。",
+          "hours": "平台参考11:00–15:00、17:00–次日02:00；晚市时段临行核。",
+          "sources": [
+            {
+              "label": "品牌官方门店",
+              "url": "https://www.bingsheng.com/pinpai_1.html"
+            },
+            {
+              "label": "米其林：东晓路店",
+              "url": "https://guide.michelin.com/sg/zh_CN/guangdong-province/guangzhou/restaurant/bingsheng-pin-wei-dongxiao-road"
+            },
+            {
+              "label": "该店餐费参考",
+              "url": "https://gs.ctrip.com/html5/you/foods/fooddetail/152/4927154.html"
+            }
+          ]
+        },
+        {
+          "id": "gz-shunde",
+          "category": "顺德菜",
+          "name": "大榕树下顺德菜（乐峰广场店）",
+          "local_name": "",
+          "area": "沙园 · 乐峰广场",
+          "tier": "就近灵活备选",
+          "address": "海珠区工业大道北106–108号，乐峰广场3层S04A铺",
+          "signatures": [
+            "均安墨鱼饼、煎酿莲藕饼",
+            "大良炸脆奶、豉味碌鹅"
+          ],
+          "budget": "人均待确认",
+          "budget_basis": "未取得可靠当前人均；清蒸鱼等称重菜先看单价，不填推算报价。",
+          "access": "沙园亚朵步行约8–15分钟，进商场、上楼另留时间。",
+          "evidence": "当前具体分店页仍列店，点评实拍可核菜单；主要优势是就在酒店商圈，店级评价证据较薄。",
+          "notes": "适合到达日晚餐或累了就近吃。可优先选鱼饼、莲藕饼等容易分享的菜，孩子口味另向店员确认。",
+          "hours": "平台参考11:00–21:30。",
+          "sources": [
+            {
+              "label": "具体分店资料",
+              "url": "https://hk.trip.com/restaurant/china/guangzhou/detail/restaurant-130122238/"
+            },
+            {
+              "label": "该店菜品实拍",
+              "url": "https://www.dianping.com/shop/Gae1t6qCYOBjM8im/photos?pg=22"
+            }
+          ]
+        },
+        {
+          "id": "gz-hotpot",
+          "category": "潮汕牛肉火锅",
+          "name": "八合里牛肉火锅（广美碧乐时光）",
+          "local_name": "",
+          "area": "昌岗 · 江南西",
+          "tier": "品牌就近备选",
+          "address": "海珠区昌岗东路257号，碧乐时光2层207–209铺",
+          "signatures": [
+            "清汤锅、吊龙或嫩肉",
+            "牛肉丸、蔬菜、河粉"
+          ],
+          "budget": "¥80–120／成人",
+          "budget_basis": "规划预算；OpenRice列¥41–100价格档，非具体菜单报价。",
+          "access": "沙园亚朵打车约10–20分钟；也可8号线到昌岗后短走。",
+          "evidence": "具体分店与地址较清楚；按品牌和便利性保留，OpenRice该分店暂无充分食评，未称本店口碑顶尖。",
+          "notes": "清汤适合不同口味。由成人照看火锅并把肉煮熟；宝业路旧店位置有变动疑点，本单不使用旧店地址。",
+          "hours": "平台参考每日11:00–22:00。",
+          "sources": [
+            {
+              "label": "OpenRice具体分店与价格档",
+              "url": "https://www.openrice.com/zh/guangzhou/r-八合里牛肉火锅-江南西-火锅-r8028152"
+            }
+          ]
+        },
+        {
+          "id": "gz-sizzling",
+          "category": "广式啫啫煲",
+          "name": "惠食佳（滨江大公馆店）",
+          "local_name": "米其林对应名称：惠食佳（海珠）",
+          "area": "滨江西路",
+          "tier": "优先安排",
+          "address": "海珠区滨江西路172号",
+          "signatures": [
+            "啫啫牛肉或鸡、啫肠粉",
+            "菜心或腊味煲仔饭"
+          ],
+          "budget": "¥160–230／成人",
+          "budget_basis": "规划预算；携程该分店人均参考¥185。",
+          "access": "从沙园亚朵打车约15–25分钟，适合结合珠江滨江游览。",
+          "evidence": "米其林有同地址海珠分店原页，并列家庭友好；没有混用东风店资料。",
+          "notes": "建议提前问位、错峰吃。啫煲上桌很烫，给孩子先分到碟里；黄鳝等名菜不必为了打卡硬点。",
+          "hours": "平台参考11:30–15:30、17:00–22:30。",
+          "sources": [
+            {
+              "label": "米其林：海珠店",
+              "url": "https://guide.michelin.com/sg/zh_CN/guangdong-province/guangzhou/restaurant/wisca-haizhu"
+            },
+            {
+              "label": "该店资料与人均",
+              "url": "https://gs.ctrip.com/html5/you/foods/fooddetail/464117/22098251.html"
+            }
+          ]
+        },
+        {
+          "id": "gz-dessert",
+          "category": "广式糖水",
+          "name": "南信牛奶甜品专家（第十甫路店）",
+          "local_name": "",
+          "area": "上下九 · 与陶陶居同街",
+          "tier": "顺路甜品",
+          "address": "荔湾区第十甫路47号（部分地图写45号，认店名定位）",
+          "signatures": [
+            "双皮奶",
+            "凤凰奶糊"
+          ],
+          "budget": "¥20–40／人",
+          "budget_basis": "甜品预算；地图人均约¥28，OpenRice列¥40以下。",
+          "access": "与陶陶居同一条街；酒店过去打车约20–35分钟，不单独往返。",
+          "evidence": "荔湾政府非遗资料确认南信广式甜品传承；政府建筑名单列47号。",
+          "notes": "一家三口可分享几款。姜撞奶口味较冲，孩子可以先尝；这里作为甜品一站即可。",
+          "hours": "第三方资料参考09:30–23:00，时效一般，12月临行核。",
+          "sources": [
+            {
+              "label": "荔湾政府非遗介绍",
+              "url": "https://www.lw.gov.cn/zjlw/lwdt/szlw/content/mpost_9042998.html"
+            },
+            {
+              "label": "OpenRice价格档",
+              "url": "https://www.openrice.com/zh/guangzhou/r-南信牛奶甜品專家-上下九-甜品-糖水-r193"
+            },
+            {
+              "label": "地址对应的政府名单",
+              "url": "https://www.lw.gov.cn/attachment/7/7343/7343382/8606632.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "changsha",
+      "name": "长沙",
+      "period": "12月15–17或18日 · 一家三口",
+      "base": "酒店未订：按苏家巷、碧沙湖与培元桥三家亚朵候选选店",
+      "base_address": "苏家巷36号／钟馗庙巷12号／黄兴北路112号；均为候选",
+      "base_status": "酒店待定",
+      "hotel_source": {
+        "label": "查看长沙住宿备选",
+        "url": "planning.html#changsha-hotels"
+      },
+      "intro": "以五一商圈、坡子街和湘江东岸为主，给七岁孩子留不辣的饭菜。长沙酒店尚未确认，因此不把下面每家都写成酒店楼下。",
+      "priority": "两三晚优先一顿家常湘菜、一次米粉和一份顺路甜食；河鲜、烧烤按兴趣选择，不追着名单跑。",
+      "restaurants": [
+        {
+          "id": "cs-hunan",
+          "category": "家常湘菜",
+          "name": "娟娟餐馆·在二楼（南阳街店）",
+          "local_name": "",
+          "area": "五一广场 · 南阳街",
+          "tier": "带娃正餐优先",
+          "address": "芙蓉区南阳街26号，麓元酒店2楼",
+          "signatures": [
+            "美味鲈鱼、酱香排骨",
+            "肉丸汤、水饺"
+          ],
+          "budget": "¥60–90／成人",
+          "budget_basis": "规划预算；携程店页人均¥56、去哪儿参考¥60。",
+          "access": "苏家巷亚朵S候选步行约15–25分钟；培元桥候选短车约10–15分钟；碧沙湖候选建议打车约15–25分钟。",
+          "evidence": "本轮携程4.6/5、37评，样本不大；有具体顾客记录提到接待沟通、肉丸汤与饺子适合孩子。",
+          "notes": "地方家常馆子，楼上用餐。请店员明确哪些菜本身不含辣，优先汤、饺子等兜底；不要把鲈鱼一概当无刺或不辣。",
+          "hours": "平台当前列11:00–22:00；是否中场休息临行核。",
+          "sources": [
+            {
+              "label": "具体分店、菜品与设施",
+              "url": "https://gs.ctrip.com/html5/you/foods/fooddetail/148/5301675.html"
+            },
+            {
+              "label": "实际顾客就餐记录",
+              "url": "https://you.ctrip.com/food/changsha148/5301675-dianping154459226.html"
+            },
+            {
+              "label": "去哪儿同店资料",
+              "url": "https://touch.go.qunar.com/poi/3407088"
+            }
+          ]
+        },
+        {
+          "id": "cs-noodles",
+          "category": "长沙米粉",
+          "name": "肆姐面粉馆（坡子街店）",
+          "local_name": "",
+          "area": "坡子街",
+          "tier": "早餐或快午餐",
+          "address": "坡子街132号星月楼1层（旧点评写128号，认星月楼）",
+          "signatures": [
+            "牛肉粉或杂酱粉",
+            "清汤肉丝粉、肉饼蒸蛋"
+          ],
+          "budget": "约¥20／人",
+          "budget_basis": "平台人均参考；加浇头、蒸蛋另计。",
+          "access": "苏家巷候选步行约12–20分钟；碧沙湖候选结合湘江东岸活动后短车前往；培元桥候选结合坡子街游览。",
+          "evidence": "本轮携程4.2/5、41评，是有具体店级记录的老牌粉店；门牌新旧资料有差异。",
+          "notes": "适合快吃。给孩子询问清汤、辣椒另放，同时核对浇头本身是否辣。",
+          "hours": "平台当前列06:30–次日02:30，12月临行核，不安排孩子夜宵。",
+          "sources": [
+            {
+              "label": "坡子街店地址、菜单与人均",
+              "url": "https://gs.ctrip.com/html5/you/foods/fooddetail/110000/359230.html"
+            }
+          ]
+        },
+        {
+          "id": "cs-riverfood",
+          "category": "虾与河鲜",
+          "name": "长沙文和友（海信广场店）",
+          "local_name": "",
+          "area": "湘江东岸 · 海信广场",
+          "tier": "氛围体验备选",
+          "address": "天心区湘江中路，海信广场1–6楼",
+          "signatures": [
+            "蒜蓉罗氏虾（看当天供应）",
+            "虾尾、猪油拌饭"
+          ],
+          "budget": "¥100–150／成人",
+          "budget_basis": "点虾类正餐的规划预算；平台人均参考约¥86–131。",
+          "access": "苏家巷候选步行约15–25分钟；碧沙湖候选可沿湘江方向结合游览后短车；培元桥候选结合五一商圈行程。",
+          "evidence": "本轮携程4.5/5、1,052评，布景与餐饮都有较多记录；知名度不等于每道菜都值得。",
+          "notes": "有儿童椅，蒜蓉菜也需问是否含辣。12月不保证当季鲜小龙虾供应，按当天菜单点，不为小龙虾强排一餐。",
+          "hours": "平台参考11:00–次日02:00；高峰取号，不把晚开门时段当亲子用餐时间。",
+          "sources": [
+            {
+              "label": "海信店具体资料与评价",
+              "url": "https://gs.ctrip.com/html5/you/foods/Hunan100053/8609957.html"
+            },
+            {
+              "label": "同店人均参考",
+              "url": "https://touch.go.qunar.com/poi/9190795"
+            }
+          ]
+        },
+        {
+          "id": "cs-bbq",
+          "category": "长沙烧烤",
+          "name": "盟重烧烤（高正街店／都正街店）",
+          "local_name": "同址的两种平台分店名称",
+          "area": "天心阁 · 都正街",
+          "tier": "想吃烧烤时选",
+          "address": "天心区高正街77号",
+          "signatures": [
+            "烤牛油、烈火牛肉",
+            "蜂蜜芥末鸡翅、玉米粒"
+          ],
+          "budget": "¥70–100／成人",
+          "budget_basis": "规划预算；平台用户及城市惠人均约¥71–74。",
+          "access": "苏家巷候选步行约15–25分钟；碧沙湖候选打车约10–20分钟；培元桥候选建议结合天心阁游览后吃。",
+          "evidence": "本轮携程4.5/5、93评，有较旧评论；本店以地址匹配，不误认成另一家分店。",
+          "notes": "成人想吃烧烤时再选，孩子可先问鸡翅、玉米能否分开调料。建议开餐早去，排太久就换，不带孩子熬夜等位。",
+          "hours": "平台参考17:30–次日01:30；有资料写18:00开门，具体开餐时刻临行核。",
+          "sources": [
+            {
+              "label": "高正街店与招牌",
+              "url": "https://you.ctrip.com/food/changsha148/17028818-dianping.html"
+            },
+            {
+              "label": "都正街名称与同址",
+              "url": "https://tw.trip.com/restaurant/china/changsha/detail/meng-zhong-barbecue-34546239/"
+            }
+          ]
+        },
+        {
+          "id": "cs-sweets",
+          "category": "长沙甜食",
+          "name": "南门口金记糖油坨坨店（长郡中学店）",
+          "local_name": "",
+          "area": "南门口",
+          "tier": "顺路买一份",
+          "address": "西湖路南门口1662购物中心1A03号（平台现址；旧攻略学院街55号不直接沿用）",
+          "signatures": [
+            "糖油坨坨"
+          ],
+          "budget": "约¥8／人",
+          "budget_basis": "当前平台人均参考，不沿用旧资料¥5一串为现价。",
+          "access": "苏家巷候选步行约12–20分钟；碧沙湖候选打车约10–15分钟；培元桥候选结合南门口游览，不专程跑。",
+          "evidence": "本轮携程4.3/5、53评；2026年9月湖南文旅仍推荐南门口金记。",
+          "notes": "一家三口分享，放温后再吃；只顺路买，不建议为一串排长队。出发前按店名核现址。",
+          "hours": "平台参考11:00–23:00，12月再核。",
+          "sources": [
+            {
+              "label": "当前分店地址与人均",
+              "url": "https://gs.ctrip.com/html5/you/foods/changsha148/5302617.html"
+            },
+            {
+              "label": "湖南文旅2026年9月推荐",
+              "url": "https://whhlyt.hunan.gov.cn/whhlyt/news/sxxw/202609/t20260917_34066559.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seoul",
+      "name": "首尔",
+      "period": "12月22–27日 · 两位成人，不带孩子",
+      "base": "已订：22–24日龙山美爵；24–27日L’Escape",
+      "base_address": "龙山：청파로20길 95；L’Escape：퇴계로67",
+      "base_status": "两家酒店已订",
+      "hotel_source": {
+        "label": "查看首尔已订住宿",
+        "url": "bookings.html#selected-stay"
+      },
+      "intro": "前两晚偏龙山、后三晚偏明洞和南大门。L’Escape后3晚已含双早，以下以午、晚餐为主；两家高端餐厅最多选一顿。",
+      "priority": "龙山段可看南营豚或真味食堂；明洞段看参鸡汤、饺子和韩牛。正式套餐预算跨度大，先比较再预约。",
+      "restaurants": [
+        {
+          "id": "kr-hanwoo",
+          "category": "韩牛烤肉",
+          "name": "王妃家（明洞本店）",
+          "local_name": "왕비집 명동본점",
+          "area": "明洞",
+          "tier": "明洞段顺路正餐",
+          "address": "서울 중구 명동8가길26，2楼",
+          "signatures": [
+            "韩牛肋间肉或眼肉",
+            "调味排骨、冷面"
+          ],
+          "budget": "约¥600–900／两人",
+          "budget_basis": "不含酒水的规划预算；平台韩牛二人拼盘₩96,000约¥478，份数与肉种影响总价。",
+          "access": "L’Escape步行约12–15分钟；不是龙山段酒店楼下。",
+          "evidence": "KTO核具体本店及代烤服务；本轮携程4.7/5、951评。优势是近、点菜方便，未核米其林奖项。",
+          "notes": "确认点的是韩牛还是其他牛肉、调味肉；不要把所有牛排骨自动当韩牛。导航按26号本店，避开其他明洞分店。",
+          "hours": "公开参考11:30–22:00；圣诞时段另核。",
+          "sources": [
+            {
+              "label": "韩国观光公社具体本店",
+              "url": "https://big5chinese.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=81310"
+            },
+            {
+              "label": "本店评分与位置",
+              "url": "https://gs.ctrip.com/html5/you/foods/fooddetail/234/4925832.html"
+            },
+            {
+              "label": "具体店菜单参考",
+              "url": "https://www.diningcode.com/profile.php?rid=GliZBNBh127Y"
+            }
+          ]
+        },
+        {
+          "id": "kr-pork",
+          "category": "猪肉炭烤",
+          "name": "南营豚（龙山原店）",
+          "local_name": "남영돈",
+          "area": "龙山 · 南营",
+          "tier": "龙山段优先",
+          "address": "서울 용산구 한강대로80길17",
+          "signatures": [
+            "颈肉항정살、肩胛盖肉가브리살",
+            "五花肉、拌面"
+          ],
+          "budget": "约¥350／两人",
+          "budget_basis": "三份肉加一份面约₩70,000的菜单组合参考，不含酒水。",
+          "access": "从龙山美爵短车约10–15分钟；不要误选圣水分店。",
+          "evidence": "韩国观光公社有该店介绍和候位信息；本轮菜单可核猪肉不同部位价格，未把它称为米其林店。",
+          "notes": "排队是主要成本。现场候位与线上候位资料有冲突，现行制度待确认；等太久就换，未订位。",
+          "hours": "本轮未核到可确认的12月营业时段；出发前看该店实时资料。",
+          "sources": [
+            {
+              "label": "韩国观光公社原店介绍",
+              "url": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=2db4140f-8d38-4203-9c1c-d70fa9a75718"
+            },
+            {
+              "label": "龙山店菜单参考",
+              "url": "https://www.diningcode.com/profile.php?rid=PZCLPHYvQHH1"
+            }
+          ]
+        },
+        {
+          "id": "kr-soup",
+          "category": "参鸡汤",
+          "name": "高丽参鸡汤（西小门本店）",
+          "local_name": "고려삼계탕 서소문본점",
+          "area": "西小门 · 市厅",
+          "tier": "冬日热午餐",
+          "address": "서울 중구 서소문로11길1",
+          "signatures": [
+            "普通参鸡汤",
+            "鲍鱼参鸡汤"
+          ],
+          "budget": "约¥200／两人",
+          "budget_basis": "普通参鸡汤约₩20,000／人，两碗约₩40,000；为当前公开菜单参考。",
+          "access": "L’Escape步行约20分钟，怕冷可短程打车。",
+          "evidence": "首尔旅游局2026年9月更新页及具体店菜单可核；不把旧年份指南记录写成2026星级。",
+          "notes": "普通参鸡汤足够体验，升级鲍鱼版不是必选；适合冬天一顿热饭。",
+          "hours": "12月25日等假期营业未单独确认。",
+          "sources": [
+            {
+              "label": "首尔旅游局餐厅页",
+              "url": "https://english.visitseoul.net/area/Korea-Samkyetang-Samgyetang/ENP008646"
+            },
+            {
+              "label": "具体本店菜单",
+              "url": "https://www.diningcode.com/profile.php?rid=3D2EVkSoU9hN"
+            }
+          ]
+        },
+        {
+          "id": "kr-noodles",
+          "category": "刀切面与蒸饺",
+          "name": "明洞饺子（本店）",
+          "local_name": "명동교자 본점",
+          "area": "明洞 · 本店位置需再核",
+          "tier": "出发前核现址",
+          "address": "新资料指向서울 중구 퇴계로129；米其林仍列旧址명동10길29，不直接按旧址导航。",
+          "signatures": [
+            "刀切面칼국수",
+            "蒸饺만두"
+          ],
+          "budget": "约¥185／两人",
+          "budget_basis": "两碗₩12,000刀切面＋一份₩13,000蒸饺，合计₩37,000的公开菜单参考。",
+          "access": "两处资料地址都在L’Escape步行约10–15分钟商圈；先核当前本店再出发。",
+          "evidence": "米其林当前有品牌本店原页；酒店官方周边指南与2026资料支持退溪路129。餐厅官方本店页本轮未成功读取，搬迁状态仍保留待核。",
+          "notes": "泡菜偏辣，面与饺子可作为简单午饭。当前地图上按韩文完整店名核位置；不把本轮未核清的Bib分类写成奖项。",
+          "hours": "第三方参考10:30–21:00，现址及12月时段需再核。",
+          "sources": [
+            {
+              "label": "米其林本店资料（含旧址）",
+              "url": "https://guide.michelin.com/en/seoul-capital-area/kr-seoul/restaurant/myeongdong-kyoja"
+            },
+            {
+              "label": "餐厅官方门店页（本轮读取未成功）",
+              "url": "https://mdkj.co.kr/restaurant/head.php"
+            },
+            {
+              "label": "Ninetree酒店官方周边指南",
+              "url": "https://atoz.ninetreehotels.com/MYEONGDONG1/guide"
+            },
+            {
+              "label": "2026菜单和搬迁资料",
+              "url": "https://koreatravellist.com/ko/places/myeongdong-kyoja"
+            }
+          ]
+        },
+        {
+          "id": "kr-crab",
+          "category": "酱油生腌蟹",
+          "name": "真味食堂（麻浦）",
+          "local_name": "진미식당",
+          "area": "麻浦",
+          "tier": "想吃生腌时选",
+          "address": "서울 마포구 마포대로186-6，1楼",
+          "signatures": [
+            "酱油蟹套餐"
+          ],
+          "budget": "约¥500／两人",
+          "budget_basis": "较新平台菜单参考₩50,000／人；旧资料₩45,000不当现价，官方最新菜单仍待核。",
+          "access": "从龙山美爵或L’Escape短车约15–25分钟。",
+          "evidence": "米其林及首尔旅游局均有具体餐厅页；有明确菜式与位置支撑。",
+          "notes": "需两人都接受生腌再选。每日数量有限，优先核午市并问预约；晚市资料有分歧，未当作已确认开放。",
+          "hours": "米其林主要显示午市；12月午餐、晚餐安排另向店家确认。",
+          "sources": [
+            {
+              "label": "米其林餐厅页",
+              "url": "https://guide.michelin.com/us/en/seoul-capital-area/kr-seoul/restaurant/jinmi-sikdang"
+            },
+            {
+              "label": "首尔旅游局",
+              "url": "https://english.visitseoul.net/restaurants/2024-jinmi/ENP9uq5ep"
+            },
+            {
+              "label": "较新菜单参考",
+              "url": "https://www.diningcode.com/profile.php?rid=dLctMKV3Mkvv"
+            }
+          ]
+        },
+        {
+          "id": "kr-modern",
+          "category": "现代韩餐",
+          "name": "Onjium",
+          "local_name": "온지음 레스토랑",
+          "area": "景福宫 · 西村",
+          "tier": "特别餐 · 与西餐二选一",
+          "address": "서울 종로구 효자로49，4楼",
+          "signatures": [
+            "季节韩餐套餐",
+            "宫廷与班家料理传统"
+          ],
+          "budget": "午约¥1,990／两人；晚约¥2,985／两人",
+          "budget_basis": "平台参考午₩200,000、晚₩300,000／人，非12月确认报价，酒水与节日菜单另核。",
+          "access": "L’Escape短车约15–25分钟，适合景福宫或西村游览当天顺路。",
+          "evidence": "米其林2026官方星级名单列一星；价格为平台参考，不把它当已核官方菜单。",
+          "notes": "正式长套餐，只在愿意花一餐预算与时间时考虑。公开常规周二至五营业，22–24日可优先询问；25日圣诞安排、订金与取消待核。",
+          "hours": "常规周末休；实际12月排班与空位未查到，未预约。",
+          "sources": [
+            {
+              "label": "米其林餐厅页",
+              "url": "https://guide.michelin.com/en/seoul-capital-area/kr-seoul/restaurant/onjium"
+            },
+            {
+              "label": "2026官方星级表",
+              "url": "https://guide.michelin.com/en/article/michelin-guide-ceremony/all-the-stars-michelin-guide-seoul-busan-2026"
+            },
+            {
+              "label": "平台菜单参考",
+              "url": "https://polle.com/place/34RT0I/온지음%20레스토랑"
+            }
+          ]
+        },
+        {
+          "id": "kr-western",
+          "category": "西式精致料理",
+          "name": "L’Amant Secret",
+          "local_name": "라망 시크레",
+          "area": "L’Escape酒店内 · 26楼",
+          "tier": "特别餐 · 与韩餐二选一",
+          "address": "서울 중구 퇴계로67，L’Escape 26楼",
+          "signatures": [
+            "以韩国季节食材设计的西式套餐"
+          ],
+          "budget": "午约¥1,890／两人；晚约¥2,885／两人",
+          "budget_basis": "官方2026年9月菜单午₩190,000、晚₩290,000／人，含10%税；酒水、加价项与圣诞菜单另核。",
+          "access": "L’Escape住宿后三晚直接上楼，无需出酒店。",
+          "evidence": "米其林2026一星，酒店官方菜单已读到具体含税价格。",
+          "notes": "约30席，商务休闲着装。想体验一顿正式西餐可选；24–26日圣诞菜单、订金与取消条款待核，不因住店推定有餐饮抵扣。",
+          "hours": "公开常规周日、周一休，12月27日通常不营业；圣诞排班未核。",
+          "sources": [
+            {
+              "label": "酒店官方餐厅",
+              "url": "https://les.josunhotel.com/dining/lamantsecret.do?lang=ko"
+            },
+            {
+              "label": "2026年9月官方含税菜单PDF",
+              "url": "https://les.josunhotel.com/revolution/content/fileImage.do?cntntsSn=2534261&fileId=2534285"
+            },
+            {
+              "label": "2026米其林官方星级表",
+              "url": "https://guide.michelin.com/en/article/michelin-guide-ceremony/all-the-stars-michelin-guide-seoul-busan-2026"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
