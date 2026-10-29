@@ -8,9 +8,9 @@
     "dateLabel": "2026年11月1日—3日 · 周日至周二",
     "group": "两家人 · 3位大人 + 2位6岁孩子",
     "timezone": "Australia/Melbourne · 当地夏令时 AEDT",
-    "updatedAt": "2026-10-14",
+    "updatedAt": "2026-10-29",
     "intro": [
-      "周日上午09:45前到Mornington的Enchanted Adventure，10:15–11:15 Nippers已订；原小火车已取消。下午前往Zulu入住，18:30在Sault吃饭。",
+      "周日上午09:45前到Mornington的Enchanted Adventure，10:15–11:15 Nippers已订；原小火车已取消。约13:00离园，途中在Dandenong Square吃麦当劳并用Tesla超充，约17:00入住Zulu，18:30在Sault吃饭。",
       "周一上午吃早餐、逛Lavandula，14:00泡温泉；泡完回别墅休息，晚餐留在Hepburn。",
       "周二退房后10:15去Cliffy’s，吃完到湖边走一小段；瀑布看精神再决定，之后回墨尔本。"
     ],
@@ -153,10 +153,11 @@
       "weekday": "周日",
       "navLabel": "周日 · 树间冒险",
       "title": "Mornington树间冒险，再去乡间入住",
-      "subtitle": "10:15 Nippers已订 · 小火车已取消 · 18:30 Sault已订",
+      "subtitle": "10:15 Nippers已订 · 途中麦当劳与超充 · 18:30 Sault已订",
       "route": [
         "墨尔本",
         "Enchanted Adventure · Arthurs Seat",
+        "Dandenong Square · 麦当劳与Tesla超充",
         "Zulu Villa",
         "Sault"
       ],
@@ -203,7 +204,7 @@
           "statusLabel": "计划",
           "summary": "按精神玩普通入园包含的迷宫、花园或滑道；不追求全部玩完。",
           "details": [
-            "午饭自行安排，不另排固定餐厅。",
+            "午饭留到途中Dandenong Square的麦当劳，与Tesla超充一并安排。",
             "尽量13:00左右离园；不要把园区停留拖到下午太晚。"
           ],
           "website": "https://www.enchantedadventure.com.au/experiences/admission/"
@@ -211,19 +212,54 @@
         {
           "id": "sun-drive",
           "time": "约13:00出发",
-          "title": "从Arthurs Seat开往Zulu",
+          "title": "从Arthurs Seat开往Dandenong Square",
           "status": "planned",
           "statusLabel": "建议时间",
-          "summary": "跨城段预留3–3.5小时，包括交通缓冲和一次休息。",
+          "summary": "约13:00离园，目标14:00左右到Dandenong Square吃午饭并补电。",
           "details": [
-            "10月14日当前最快导航约207公里、2小时34分钟，路线包含收费道路；这不是11月1日的路况预测。",
-            "途中过休息站时再补给，孩子需要就停。"
+            "10月29日当前导航参考约60.2公里、46分钟，行程按约1小时预留；路线经M11／M3，包含收费道路。",
+            "先去Clow Street停车楼，按Tesla车机导航寻找Dandenong Plaza超充站。",
+            "当前导航时间不是11月1日路况预测；预计到达时间按当天交通调整。"
           ],
-          "mapUrl": "https://www.google.com/maps/dir/?api=1&origin=Enchanted+Adventure,+55+Purves+Road,+Arthurs+Seat+VIC&destination=190+Mannings+Road,+Elevated+Plains+VIC&travelmode=driving"
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&origin=Enchanted+Adventure,+55+Purves+Road,+Arthurs+Seat+VIC&destination=Tesla+Supercharger,+Dandenong+Plaza,+Clow+Street,+Dandenong+VIC&travelmode=driving"
+        },
+        {
+          "id": "sun-dandenong-charge",
+          "time": "约14:00—14:45",
+          "title": "Dandenong Square · 麦当劳午饭与Tesla超充",
+          "status": "planned",
+          "statusLabel": "计划停靠 · 非预约",
+          "summary": "建议停留30–45分钟，边吃午饭边补电；充多少按车辆状态和后续路程决定。",
+          "details": [
+            "超充位于Clow Street有顶停车楼Level 2，Star Car Wash附近；共有6个充电位，标称最高250kW。",
+            "250kW是充电桩最高功率，不能当作车辆实际充电功率；以车机和现场显示为准。",
+            "麦当劳在商场Level 2 Food Court，官网常规周日09:00–18:00营业。",
+            "用Tesla车机导航查看充电位状态及预计到达Zulu后的剩余电量，再决定充电量和停留时间。",
+            "充电完成后及时移车；午饭和超充费用待实际账单记录，两家各50%。"
+          ],
+          "address": "Clow Street undercover carpark, Level 2, Dandenong Square, Dandenong VIC 3175",
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Tesla+Supercharger,+Dandenong+Plaza,+Clow+Street,+Dandenong+VIC&travelmode=driving",
+          "website": "https://dandenongsquare.com/centre-info/",
+          "tip": "车机中的超充站名称仍可能显示Dandenong Plaza；午饭与充电只是计划，不保证抵达时有空位。"
+        },
+        {
+          "id": "sun-drive-zulu",
+          "time": "约14:45出发",
+          "title": "从Dandenong开往Zulu",
+          "status": "planned",
+          "statusLabel": "建议时间",
+          "summary": "补电和午饭后继续前往Elevated Plains，目标17:00左右抵达Zulu。",
+          "details": [
+            "10月29日当前导航参考约153公里、1小时52分钟，行程预留2–2.5小时；路线经M1／M8，包含收费道路。",
+            "两段当前导航合计约213公里、2小时39分钟，不含午饭和充电停留；不是11月1日交通预测。",
+            "按当天导航和途中休息需要调整，目标约17:00入住；给18:30 Sault晚餐留出休息和开车时间。",
+            "若堵车或充电等待较久，优先保住晚餐时间，不再增加停靠景点。"
+          ],
+          "mapUrl": "https://www.google.com/maps/dir/?api=1&origin=Tesla+Supercharger,+Dandenong+Plaza,+Clow+Street,+Dandenong+VIC&destination=190+Mannings+Road,+Elevated+Plains+VIC&travelmode=driving"
         },
         {
           "id": "sun-checkin",
-          "time": "约16:00—16:30",
+          "time": "约17:00",
           "title": "入住Zulu Villa",
           "status": "confirmed",
           "statusLabel": "住宿已订",
@@ -553,18 +589,34 @@
         "note": "5人预约已确认，餐费尚未出账；当日加收及饮料按实际账单计入。"
       },
       {
+        "id": "dandenong-lunch",
+        "title": "Dandenong Square · 周日麦当劳午饭",
+        "amount": null,
+        "status": "pending",
+        "statusLabel": "待实际账单",
+        "note": "午饭为计划停靠，金额按实际账单补录，两家各50%。"
+      },
+      {
+        "id": "dandenong-charging",
+        "title": "Dandenong Plaza · Tesla超充",
+        "amount": null,
+        "status": "pending",
+        "statusLabel": "待实际充电账单",
+        "note": "按实际充电金额补录，两家各50%；尚未充电，不计作零元或已付费用。"
+      },
+      {
         "id": "other",
         "title": "其他餐饮、停车／路费",
         "amount": null,
         "status": "pending",
         "statusLabel": "待实际账单",
-        "note": "其他餐饮、零食、停车及路费等未列支出，按实际金额补录并均分。"
+        "note": "其他餐饮、零食、停车及路费等未列支出，按实际金额补录并均分；Dandenong午饭与超充另列，避免重复计入。"
       }
     ],
     "notes": [
       "Enchanted按票面总价计账，其他费用按已确认金额或最终实际账单记录；所有费用最终两家各50%。",
       "已确认金额合计A$2,234，每家A$1,117；加上Sault与Lavandula预算，参考合计A$2,801，每家A$1,400.50。",
-      "参考合计尚未计入Wombat、Rubens、Cliffy’s实际账单，以及额外酒水、加购和路费；待账单项目不是零元。"
+      "参考合计尚未计入Dandenong午饭与超充、Wombat、Rubens、Cliffy’s实际账单，以及额外酒水、加购和路费；待账单项目不是零元。"
     ]
   },
   "checklist": [
@@ -582,6 +634,11 @@
       "id": "confirmations",
       "label": "把Tree Surfing、温泉、餐厅和住宿确认放到手机里",
       "detail": "以上预约均已确认；保留原邮件／电子票，网页只用于看行程。"
+    },
+    {
+      "id": "dandenong-charging",
+      "label": "出发前核对Dandenong超充与麦当劳位置",
+      "detail": "Tesla车机选择Dandenong Plaza超充；Clow Street停车楼Level 2、Star Car Wash附近。麦当劳在商场Level 2 Food Court，常规周日09:00–18:00。"
     },
     {
       "id": "sault-cutoff",
@@ -643,6 +700,24 @@
       "title": "Enchanted Adventure · 活动条款",
       "url": "https://www.enchantedadventure.com.au/terms-and-conditions/",
       "note": "参加要求、陪同与手套规定。"
+    },
+    {
+      "id": "dandenong-centre",
+      "title": "Dandenong Square · 停车与超充位置",
+      "url": "https://dandenongsquare.com/centre-info/",
+      "note": "Clow Street有顶停车楼Level 2、Star Car Wash附近；6个最高250kW CCS超充位。"
+    },
+    {
+      "id": "dandenong-mcdonalds",
+      "title": "Dandenong Square · 麦当劳",
+      "url": "https://dandenongsquare.com/store/mcdonalds/",
+      "note": "Level 2 Food Court，官网常规周日09:00–18:00。"
+    },
+    {
+      "id": "dandenong-tesla",
+      "title": "Tesla · Dandenong Plaza超充站",
+      "url": "https://www.tesla.com/findus/location/supercharger/31625",
+      "note": "站点名称与充电规格；实时空位和预估到达电量以Tesla车机为准。"
     },
     {
       "id": "zulu",
@@ -718,9 +793,9 @@
     }
   ],
   "notes": [
-    "10月14日更新：两个孩子均为6岁。周日小火车已取消；11月1日10:15–11:15的1成人+2儿童Nippers、另2成人09:00全日普通入园及3双园区手套均已获商家确认。",
+    "10月29日更新：周日Enchanted Adventure后改经Dandenong Square吃麦当劳及Tesla超充，再前往Zulu；该停靠是计划，已订活动与餐厅时间不变。两个孩子均为6岁，Nippers、普通入园及3双园区手套均已获商家确认。",
     "所有时间为墨尔本当地时间。已订项目按本次确认记录；其他具体时刻是建议安排，可按天气和精神调整。",
-    "原餐饮、农场与温泉资料核查于2026年10月7日；Tree Surfing资料与跨城路线核查于10月14日，出行前以最新信息为准。",
+    "原餐饮、农场与温泉资料核查于2026年10月7日；Tree Surfing资料核查于10月14日；Dandenong商场、麦当劳与超充资料核查于10月29日，车程与充电状态以出行当天导航为准。",
     "网页不展示私人订单、预订编号或完整确认邮件。"
   ]
 }
