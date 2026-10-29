@@ -11,7 +11,7 @@
     "updatedAt": "2026-10-29",
     "intro": [
       "周日上午09:45前到Mornington的Enchanted Adventure，10:15–11:15 Nippers已订；原小火车已取消。约13:00离园，途中在Dandenong Square吃麦当劳并用Tesla超充，约17:00入住Zulu，18:30在Sault吃饭。",
-      "周一上午吃早餐、逛Lavandula，14:00泡温泉；泡完回别墅休息，晚餐留在Hepburn。",
+      "周一上午吃早餐，Lavandula看当天上午天气再决定；持续下雨就跳过，早餐和休息后按时14:00泡温泉。泡完回别墅休息，晚餐留在Hepburn。",
       "周二退房后10:15去Cliffy’s，吃完到湖边走一小段；瀑布看精神再决定，之后回墨尔本。"
     ],
     "highlights": [
@@ -161,6 +161,33 @@
         "Zulu Villa",
         "Sault"
       ],
+      "weather": {
+        "summary": "上午偏凉、有小阵雨可能，傍晚Daylesford更凉。",
+        "locations": [
+          {
+            "name": "Arthurs Seat · Enchanted Adventure",
+            "temperature": "12–20°C",
+            "rainChance": "50%",
+            "rainAmount": "0–1mm",
+            "description": "阵雨较可能在上午和下午；西风15–25km/h，下午转南至西南风15–20km/h。",
+            "issuedAt": "2026-10-29 22:35 AEDT发布",
+            "sourceUrl": "https://www.bom.gov.au/places/vic/arthurs-seat/forecast/"
+          },
+          {
+            "name": "Daylesford · 住宿区域参考",
+            "temperature": "7–18°C",
+            "rainChance": "40%",
+            "rainAmount": "0–1mm",
+            "description": "有阵雨可能，早晚较凉。",
+            "issuedAt": "2026-10-29 17:00 AEDT发布",
+            "sourceUrl": "https://www.bom.gov.au/places/vic/daylesford/forecast/"
+          }
+        ],
+        "advice": [
+          "Nippers预约仍为10:15；出发前查看园区通知，若遇雷暴或极端风等情况按园区安排处理。",
+          "穿方便活动的衣物与包脚运动鞋，带防风外套、轻便雨衣及孩子的替换衣物；到Zulu后和晚餐出门时加一层。"
+        ]
+      },
       "items": [
         {
           "id": "sun-enchanted-arrive",
@@ -309,17 +336,36 @@
       "date": "2026-11-02",
       "dateLabel": "11.02",
       "weekday": "周一",
-      "navLabel": "周一 · 农场与温泉",
-      "title": "农场花园，下午泡温泉",
-      "subtitle": "上午Lavandula · 14:00 Bathhouse · 晚餐留在Hepburn",
+      "navLabel": "周一 · 温泉",
+      "title": "上午看天气，下午泡温泉",
+      "subtitle": "Lavandula看当天上午天气再决定 · 14:00 Bathhouse已订 · 晚餐留在Hepburn",
       "route": [
         "Zulu Villa",
         "Wombat Hill House",
-        "Lavandula",
+        "Lavandula（看当天上午天气再决定）",
         "Hepburn Bathhouse",
         "Zulu休息",
         "Rubens"
       ],
+      "weather": {
+        "summary": "周一降雨概率较高，Lavandula看当天上午天气再决定。",
+        "locations": [
+          {
+            "name": "Daylesford · Hepburn及Lavandula区域参考",
+            "temperature": "7–20°C",
+            "rainChance": "90%",
+            "rainAmount": "1–10mm",
+            "description": "降雨概率较高，午后和晚间可能有雷暴。",
+            "issuedAt": "2026-10-29 17:00 AEDT发布",
+            "sourceUrl": "https://www.bom.gov.au/places/vic/daylesford/forecast/"
+          }
+        ],
+        "advice": [
+          "Lavandula看当天上午天气再决定；若持续下雨就跳过，早餐后回住宿休息，按时14:00参加已订Bathhouse。",
+          "带防风防雨外套及适合湿地面的鞋；泳衣、拖鞋和干衣物单独装好，温泉后及时换干衣。",
+          "若有雷暴，暂停花园等户外停留；当天不另加必须完成的户外项目。"
+        ]
+      },
       "items": [
         {
           "id": "mon-brunch",
@@ -341,20 +387,22 @@
         },
         {
           "id": "mon-lav",
-          "time": "10:30—11:45",
-          "title": "Lavandula Swiss Italian Farm",
-          "status": "planned",
-          "statusLabel": "已选 · 未订票",
-          "summary": "看春季花园、石屋和农场动物，普通入园可现场购票。",
+          "time": "10:30—11:45（天气允许时）",
+          "title": "Lavandula · 看当天上午天气再决定",
+          "status": "optional",
+          "statusLabel": "看天气决定 · 未订票",
+          "summary": "当天上午天气允许再去看春季花园、石屋和农场动物；若持续下雨就跳过，早餐和休息后按时14:00去Bathhouse。",
           "details": [
             "周一当前营业10:00–16:00，免费停车。",
-            "成人A$5、5–18岁A$1，3大2小当前合计A$17。",
+            "成人A$5、5–18岁A$1，3大2小当前合计A$17；仅天气允许并实际入园时发生。",
             "11月初以春季农场风景为主；官网薰衣草峰期是1月至初秋，不按盛花季期待。",
-            "离开后留出休息和去Bathhouse的时间，午饭自行安排。"
+            "普通入园可现场购票，不预先锁定；决定不去时，早餐后回Zulu休息即可。",
+            "无论是否去Lavandula，都留出休息和报到时间，约13:40到Bathhouse，14:00预约不变；午饭自行安排。"
           ],
           "address": "350 Hepburn-Newstead Road, Shepherds Flat VIC",
           "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Lavandula%20Swiss%20Italian%20Farm%2C%20350%20Hepburn-Newstead%20Road%2C%20Shepherds%20Flat%20VIC&travelmode=driving",
-          "website": "https://www.lavandula.com.au/pages/visitor-information"
+          "website": "https://www.lavandula.com.au/pages/visitor-information",
+          "tip": "当天上午看最新天气和现场情况再决定，持续下雨就跳过。"
         },
         {
           "id": "mon-bath-arrive",
@@ -440,6 +488,25 @@
         "Trentham Falls（可选）",
         "墨尔本"
       ],
+      "weather": {
+        "summary": "周二仍有阵雨可能，湖边和瀑布保留弹性。",
+        "locations": [
+          {
+            "name": "Daylesford · 退房及brunch区域参考",
+            "temperature": "10–19°C",
+            "rainChance": "50%",
+            "rainAmount": "0–2mm",
+            "description": "仍有阵雨可能，户外短走按当天情况安排。",
+            "issuedAt": "2026-10-29 17:00 AEDT发布",
+            "sourceUrl": "https://www.bom.gov.au/places/vic/daylesford/forecast/"
+          }
+        ],
+        "advice": [
+          "10:15 Cliffy’s室内预约不变；雨停且地面情况合适时再去湖边，持续下雨可直接返程。",
+          "Trentham Falls仍是可选项，出发前另外查看当地天气与Parks Victoria开放状态；湿滑或关闭就跳过。",
+          "外套和雨具放在随手可取的位置，短走穿防滑鞋，不必完成整圈步道。"
+        ]
+      },
       "items": [
         {
           "id": "tue-checkout",
@@ -562,7 +629,7 @@
         "amount": 17,
         "status": "estimate",
         "statusLabel": "现场入园预算",
-        "note": "按3位成人及2名6岁儿童当前门票估算，现场购买后按实际金额更新。"
+        "note": "按3位成人及2名6岁儿童当前门票估算；看周一当天上午天气再决定，天气允许并实际入园才发生，之后按实际金额更新。"
       },
       {
         "id": "wombat",
@@ -790,11 +857,24 @@
       "title": "Parks Victoria · Trentham Falls",
       "url": "https://www.parks.vic.gov.au/places-to-see/parks/coliban-river-scenic-reserve/attractions/trentham-falls",
       "note": "只到正式观景台，不可下谷到瀑布底部。"
+    },
+    {
+      "id": "weather-arthurs-seat",
+      "title": "BOM · Arthurs Seat天气预报",
+      "url": "https://www.bom.gov.au/places/vic/arthurs-seat/forecast/",
+      "note": "2026-10-29 22:35 AEDT发布的11月1日预报快照；不是实时天气，临近出发再更新。"
+    },
+    {
+      "id": "weather-daylesford",
+      "title": "BOM · Daylesford天气预报",
+      "url": "https://www.bom.gov.au/places/vic/daylesford/forecast/",
+      "note": "2026-10-29 17:00 AEDT发布的11月1–3日预报快照；不是实时天气，临近出发再更新。"
     }
   ],
   "notes": [
     "10月29日更新：周日Enchanted Adventure后改经Dandenong Square吃麦当劳及Tesla超充，再前往Zulu；该停靠是计划，已订活动与餐厅时间不变。两个孩子均为6岁，Nippers、普通入园及3双园区手套均已获商家确认。",
     "所有时间为墨尔本当地时间。已订项目按本次确认记录；其他具体时刻是建议安排，可按天气和精神调整。",
+    "天气是2026年10月29日BOM预报快照，不是实时天气；临近出发和当天再更新。周一Lavandula看当天上午天气再决定，持续下雨可跳过，14:00 Bathhouse预约不变。",
     "原餐饮、农场与温泉资料核查于2026年10月7日；Tree Surfing资料核查于10月14日；Dandenong商场、麦当劳与超充资料核查于10月29日，车程与充电状态以出行当天导航为准。",
     "网页不展示私人订单、预订编号或完整确认邮件。"
   ]

@@ -273,6 +273,39 @@
     return li;
   }
 
+  function renderWeather(weather = {}) {
+    if (!weather.locations?.length) return null;
+    const panel = element("aside", "weather-panel");
+    panel.setAttribute("aria-label", "当天的天气与安排");
+    panel.append(element("h4", "weather-title", "天气 · 10月29日预报"));
+    if (weather.summary) panel.append(element("p", "weather-summary", weather.summary));
+    weather.locations.forEach((location) => {
+      const place = element("div", "weather-location");
+      place.append(element("h5", "", location.name));
+      const metrics = element("dl", "weather-metrics");
+      [["气温", location.temperature], ["降雨概率", location.rainChance], ["预计雨量", location.rainAmount]].forEach(([label, value]) => {
+        const metric = element("div", "");
+        metric.append(element("dt", "", label), element("dd", "", value));
+        metrics.append(metric);
+      });
+      place.append(metrics);
+      if (location.description) place.append(element("p", "weather-description", location.description));
+      const source = element("p", "weather-source");
+      const sourceLink = link(location.sourceUrl, "BOM 预报 ↗");
+      if (sourceLink) source.append(sourceLink);
+      if (location.issuedAt) source.append(document.createTextNode(` · ${location.issuedAt}`));
+      place.append(source);
+      panel.append(place);
+    });
+    if (weather.advice?.length) {
+      const advice = element("ul", "weather-advice");
+      weather.advice.forEach((note) => advice.append(element("li", "", note)));
+      panel.append(advice);
+    }
+    panel.append(element("p", "weather-snapshot", "2026年10月29日预报快照；出发前点开 BOM 查看更新。"));
+    return panel;
+  }
+
   function renderDays(days = []) {
     const sections = days.map((day, index) => {
       const section = element("section", "day-section");
@@ -289,6 +322,8 @@
       if (day.subtitle) heading.append(element("p", "", day.subtitle));
       heading.append(dayMotif(index));
       const body = element("div", "day-body");
+      const weather = renderWeather(day.weather);
+      if (weather) body.append(weather);
       const list = element("ol", "day-items");
       (day.items || []).forEach((item) => list.append(renderItem(item)));
       body.append(list);
